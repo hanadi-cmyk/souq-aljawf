@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المساعد الزراعي الذكي بالذكاء الاصطناعي | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased p-6 md:p-10 space-y-4">
+
+  <!-- Disclaimer [FR-51] -->
+  <div class="max-w-5xl mx-auto bg-amber-50 border-r-4 border-amber-600 p-4 rounded-2xl flex items-center gap-3 text-amber-950 text-xs shadow-xs">
+    <i class="fa-solid fa-triangle-exclamation text-amber-600 text-lg"></i>
+    <div>
+      <strong class="font-bold">تنبيه قانوني وإرشادي:</strong>
+      إجابات المساعد الذكي استرشادية عامة تراعي خصائص محاصيل محافظة الجوف، ولا تغني عن استشارة المهندس الزراعي المختص أو مكتب الزراعة بالجوف قبل اتخاذ أي قرارات مصيرية.
+    </div>
+  </div>
+
+  <!-- Main AI Hub -->
+  <div class="max-w-5xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl h-[620px] flex flex-col md:flex-row overflow-hidden">
+    
+    <!-- Sidebar: Chat History [FR-52] -->
+    <div class="w-full md:w-64 bg-slate-50 border-l border-slate-200 p-4 flex flex-col justify-between text-xs">
+      <div class="space-y-3">
+        <button class="w-full py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl shadow transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-plus"></i> استشارة زراعية جديدة
+        </button>
+
+        <div class="text-[11px] font-bold text-slate-400 uppercase pt-2">سجل المحادثات السابقة:</div>
+        <div class="space-y-1.5">
+          <div class="p-2.5 bg-white border border-emerald-300 rounded-xl font-bold text-emerald-950 shadow-xs">
+            علاج سوسة النخيل الحمراء
+          </div>
+          <div class="p-2.5 rounded-xl hover:bg-white text-slate-600 cursor-pointer">
+            جدول ري القمح في الحزم
+          </div>
+          <div class="p-2.5 rounded-xl hover:bg-white text-slate-600 cursor-pointer">
+            مكافحة دودة الحشد بالخضار
+          </div>
+        </div>
+      </div>
+
+      <div class="text-[10px] text-slate-400 text-center border-t pt-2">
+        نموذج الجوف الزراعي الذكي v2.4
+      </div>
+    </div>
+
+    <!-- Active Chat & Scanner Area -->
+    <div class="flex-1 p-6 flex flex-col justify-between bg-slate-50/40 text-xs">
+      
+      <!-- Feed -->
+      <div class="space-y-4 overflow-y-auto">
+        <!-- Farmer Message with Photo -->
+        <div class="flex justify-end gap-2">
+          <div class="bg-emerald-900 text-white p-4 rounded-3xl rounded-tl-none max-w-md space-y-2 shadow-sm">
+            <p>السلام عليكم، لاحظت اصفراراً في أطراف أوراق محصول القمح لدي في مديرية الحزم، وهذه صورة التقطتها من الحقل اليوم. ما المشكلة؟</p>
+            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-32 w-full object-cover border border-emerald-700">
+          </div>
+          <div class="w-8 h-8 rounded-full bg-slate-300 text-slate-700 flex items-center justify-center font-bold">ص</div>
+        </div>
+
+        <!-- AI Diagnostic Response -->
+        <div class="flex justify-start gap-2">
+          <div class="w-8 h-8 rounded-full bg-emerald-800 text-white flex items-center justify-center shadow">
+            <i class="fa-solid fa-robot text-xs"></i>
+          </div>
+          <div class="bg-white border border-emerald-300 p-4 rounded-3xl rounded-tr-none shadow-md max-w-lg space-y-3">
+            <div class="flex justify-between items-center border-b pb-2">
+              <span class="font-bold text-emerald-900 flex items-center gap-1.5">
+                <i class="fa-solid fa-stethoscope text-emerald-700"></i> نتيجة التحليل البصري المبدئي
+              </span>
+              <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">دقة التحليل: 88%</span>
+            </div>
+            <p class="text-slate-800">
+              <strong>التشخيص المحتمل:</strong> نقص عنصر البوتاسيوم وتملح سطحي خفيف ناتج عن زيادة التبخر في الجوف، مع استبعاد الإصابة بصدأ القمح الفطري.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl border space-y-1 text-slate-700 text-[11px]">
+              <div class="font-bold text-slate-900">التوصيات الإرشادية المقترحة:</div>
+              <div>• ري رية غسيلية في الصباح الباكر لتقليل ترسبات الأملاح.</div>
+              <div>• إضافة سلفات البوتاسيوم بمعدل 5 كجم للهكتار.</div>
+            </div>
+            <div class="flex justify-between text-[10px] text-slate-400 pt-1">
+              <span>استجابة في 3.4 ثوانٍ</span>
+              <span class="text-red-500 hover:underline cursor-pointer"><i class="fa-regular fa-flag"></i> إبلاغ المشرف عن عدم دقة الإجابة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Bar -->
+      <div class="bg-white p-2.5 rounded-2xl border border-slate-200 shadow-md flex items-center gap-2 mt-4">
+        <button class="p-2.5 text-slate-400 hover:text-emerald-800 hover:bg-slate-50 rounded-xl transition" title="رفع صورة للآفة أو المحصول">
+          <i class="fa-solid fa-camera text-lg"></i>
+        </button>
+        <input type="text" placeholder="اكتب استفسارك الزراعي هنا باللهجة المحلية أو الفصحى..." class="flex-1 outline-none bg-transparent px-2 text-slate-800">
+        <button class="px-5 py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl shadow">
+          إرسال
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

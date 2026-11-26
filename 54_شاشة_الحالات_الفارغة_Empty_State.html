@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شاشات الحالات الفارغة (Empty States) | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800 p-4 md:p-8 space-y-8">
+
+  <div class="max-w-4xl mx-auto text-center space-y-2">
+    <span class="bg-emerald-100 text-emerald-800 text-xs font-black px-3 py-1 rounded-full">واجهات الحالات الاستثنائية والشرطية</span>
+    <h1 class="text-2xl font-black text-slate-900">حالات الشاشات الخالية من البيانات (Empty States)</h1>
+    <p class="text-xs text-slate-500">تصاميم تفاعلية تظهر للمستخدم عندما لا تتوفر عناصر أو طلبات أو نتائج بحث</p>
+  </div>
+
+  <main class="max-w-4xl mx-auto space-y-8">
+
+    <!-- Empty State 1: No Incoming Orders (For Farmer) -->
+    <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm text-center space-y-4">
+      <div class="w-20 h-20 bg-amber-100 text-amber-700 rounded-3xl flex items-center justify-center text-4xl mx-auto shadow-sm">
+        <i class="fa-solid fa-inbox"></i>
+      </div>
+      <div class="space-y-1">
+        <span class="text-xs font-bold text-slate-400">حالة لوحة تحكم المزارع</span>
+        <h2 class="text-xl font-black text-slate-900">لا توجد طلبات شراء واردة حالياً</h2>
+        <p class="text-xs text-slate-500 max-w-md mx-auto">
+          محاصيلك معروضة في سوق الجوف للمشترين؛ بمجرد أن يقدم أحد التجار أو المطاحن طلب شراء جديد سيصلك إشعار فوري هنا وعلى هاتفك.
+        </p>
+      </div>
+      <div class="pt-2 flex justify-center gap-3 text-xs font-bold">
+        <a href="29_معالج_إضافة_محصول_متعدد_الخطوات.html" class="px-6 py-3 bg-emerald-800 hover:bg-emerald-900 text-white rounded-xl shadow transition flex items-center gap-2">
+          <i class="fa-solid fa-plus"></i> إضافة محصول زراعي جديد
+        </a>
+        <a href="03_سوق_المحاصيل_الرئيسي.html" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition">
+          معاينة محاصيلك بالسوق
+        </a>
+      </div>
+    </div>
+
+    <!-- Empty State 2: No Search Results (For Trader) -->
+    <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm text-center space-y-4">
+      <div class="w-20 h-20 bg-slate-100 text-slate-400 rounded-3xl flex items-center justify-center text-4xl mx-auto shadow-sm">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="space-y-1">
+        <span class="text-xs font-bold text-slate-400">حالة نتائج الفلترة والبحث</span>
+        <h2 class="text-xl font-black text-slate-900">لم نتمكن من العثور على محاصيل مطابقة للبحث</h2>
+        <p class="text-xs text-slate-500 max-w-md mx-auto">
+          جرب توسيع نطاق البحث، أو تغيير المديرية المحددة، أو إزالة بعض فلاتر الكميات للحصول على خيارات أكثر في مزارع الجوف.
+        </p>
+      </div>
+      <div class="pt-2 flex justify-center gap-3 text-xs font-bold">
+        <a href="36_البحث_المتقدم_وتصفية_محاصيل_الجملة_للتاجر.html" class="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl shadow transition flex items-center gap-2">
+          <i class="fa-solid fa-arrows-rotate"></i> إعادة ضبط كافة الفلاتر
+        </a>
+        <a href="17_خريطة_المحاصيل_الجغرافية_GIS.html" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition">
+          البحث عبر الخريطة الجغرافية
+        </a>
+      </div>
+    </div>
+
+    <!-- Empty State 3: No Notifications -->
+    <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm text-center space-y-4">
+      <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-3xl flex items-center justify-center text-4xl mx-auto shadow-sm">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <div class="space-y-1">
+        <span class="text-xs font-bold text-slate-400">حالة مركز التنبيهات</span>
+        <h2 class="text-xl font-black text-slate-900">صندوق الإشعارات فارغ تماماً</h2>
+        <p class="text-xs text-slate-500 max-w-md mx-auto">
+          أنت مطلع على كافة المستجدات! لا توجد تنبيهات أو رسائل أو عروض جديدة غير مقروءة في هذا التبويب.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

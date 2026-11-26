@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تتبع عروض الاستثمار الزراعي | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="40_لوحة_تحكم_المستثمر_الزراعي.html" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <div>
+          <h1 class="font-black text-slate-900 text-sm md:text-base">سجل وتتبع عروض التمويل الاستثماري</h1>
+          <span class="text-[11px] text-slate-500">متابعة حالة قبول المزارعين، المفاوضات، وإجراءات توقيع العقود</span>
+        </div>
+      </div>
+      <a href="41_البحث_المتقدم_عن_فرص_الاستثمار_الزراعي.html" class="px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-xl text-xs font-bold shadow transition flex items-center gap-2">
+        <i class="fa-solid fa-plus"></i>
+        <span>فرصة جديدة</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-4 md:p-6 space-y-6">
+
+    <!-- KPI Metric Badges -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="text-xs text-slate-500 font-bold mb-1">عروض قيد المراجعة</div>
+        <div class="text-2xl font-black text-amber-600">2 عروض</div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="text-xs text-slate-500 font-bold mb-1">عروض تم قبولها</div>
+        <div class="text-2xl font-black text-emerald-700">1 عرض (عقد جاهز)</div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="text-xs text-slate-500 font-bold mb-1">إجمالي التمويل المعروض</div>
+        <div class="text-2xl font-black text-blue-700">73M ريال</div>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+        <div class="text-xs text-slate-500 font-bold mb-1">مشاريع استثمارية نشطة</div>
+        <div class="text-2xl font-black text-slate-900">2 مشاريع</div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-bold">
+      <div class="flex items-center gap-2 overflow-x-auto w-full md:w-auto">
+        <button class="px-4 py-2 bg-blue-700 text-white rounded-xl whitespace-nowrap">الكل (3)</button>
+        <button class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl whitespace-nowrap">قيد مراجعة المزارع (2)</button>
+        <button class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl whitespace-nowrap">مقبول وجاهز للتعاقد (1)</button>
+      </div>
+
+      <div class="relative w-full md:w-64">
+        <input type="text" placeholder="بحث برقم الفرصة أو اسم المزارع..." class="w-full p-2.5 pr-8 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-blue-600">
+        <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-slate-400"></i>
+      </div>
+    </div>
+
+    <!-- Proposals List -->
+    <div class="space-y-4">
+
+      <!-- Proposal 1: Accepted & Ready for Legal Contract -->
+      <div class="bg-white rounded-3xl p-6 border-2 border-emerald-600 shadow-md space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                <i class="fa-solid fa-handshake"></i> وافق المزارع على عرضك
+              </span>
+              <span class="text-xs font-mono font-bold text-slate-400">#PROP-2026-081</span>
+            </div>
+            <h3 class="font-black text-slate-900 text-base">مشروع تدشين 12 بيتاً محمياً للخضروات</h3>
+            <p class="text-xs text-slate-500">المزارع: يحيى الغانمي | الحزم - غرب المطار</p>
+          </div>
+
+          <div class="text-left font-black shrink-0">
+            <span class="text-[11px] text-slate-400 block font-bold">مبلغ التمويل المعتمد:</span>
+            <span class="text-xl text-emerald-800">18,000,000 ريال (مناصفة 50%)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 text-xs text-emerald-950 font-semibold leading-relaxed">
+          <i class="fa-solid fa-circle-check text-emerald-600 ml-1"></i>
+          وافق المزارع على جدول الدفعات والشروط؛ يمكنك الآن تنزيل مسودة العقد الشرعي والالتقاء في مكتب الزراعة أو المحكمة لتوثيق الشراكة.
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2 pt-2 border-t text-xs font-bold">
+          <button class="flex-1 py-3 bg-emerald-800 hover:bg-emerald-900 text-white font-black rounded-xl text-center shadow transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-contract"></i>
+            <span>تنزيل مسودة العقد الاستثماري الموحد (PDF)</span>
+          </button>
+          <a href="13_المحادثة_الفورية_بين_الأطراف.html" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-comments text-emerald-700"></i>
+            <span>تنسيق موعد الجلسة في الشات</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proposal 2: Pending with Option to Cancel -->
+      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="bg-amber-100 text-amber-900 text-[10px] font-black px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                <i class="fa-solid fa-clock"></i> قيد دراسة المزارع
+              </span>
+              <span class="text-xs font-mono font-bold text-slate-400">#PROP-2026-089</span>
+            </div>
+            <h3 class="font-black text-slate-900 text-base">مشروع استصلاح 40 هكتار قمح صلب بالري المحوري</h3>
+            <p class="text-xs text-slate-500">المزارع: صالح بن ناصر المتوني | المتون - وادي الخارد</p>
+          </div>
+
+          <div class="text-left font-black shrink-0">
+            <span class="text-[11px] text-slate-400 block font-bold">المبلغ المقترح:</span>
+            <span class="text-xl text-slate-900">45,000,000 ريال (أرباح 40%)</span>
+          </div>
+        </div>
+
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-600 leading-relaxed font-semibold">
+          تم تقديم العرض بتاريخ أمس الساعة 02:40 م؛ يمكنك سحب أو تعديل العرض بحرية طالما لم يتم قبوله.
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2 pt-2 border-t text-xs font-bold">
+          <a href="13_المحادثة_الفورية_بين_الأطراف.html" class="flex-1 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-center transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-comments text-blue-700"></i>
+            <span>مناقشة العرض في الشات</span>
+          </a>
+          <!-- Cancel Proposal Button -->
+          <button class="px-6 py-3 bg-red-50 hover:bg-red-100 text-red-700 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-ban"></i>
+            <span>إلغاء وسحب العرض</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

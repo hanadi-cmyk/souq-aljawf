@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حساب معلق | منصة الجوف الزراعية</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-xl w-full bg-white p-8 rounded-3xl border border-red-200 shadow-2xl space-y-6">
+
+    <!-- Suspended Alert Header -->
+    <div class="text-center space-y-2">
+      <div class="w-16 h-16 bg-red-100 text-red-600 rounded-3xl flex items-center justify-center text-3xl mx-auto shadow-sm">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h1 class="text-2xl font-black text-slate-900">تم تعليق حسابك مؤقتاً</h1>
+      <p class="text-xs text-slate-500 font-semibold">بناءً على مراجعة إدارة الامتثال والرقابة بمكتب الزراعة بالجوف</p>
+    </div>
+
+    <!-- Reason Box -->
+    <div class="bg-red-50 p-4 rounded-2xl border border-red-200 text-xs space-y-2">
+      <div class="flex items-center justify-between font-bold">
+        <span class="text-red-900">رقم البلاغ / القرار:</span>
+        <span class="font-mono text-red-700">#SUSP-2026-042</span>
+      </div>
+      <div class="flex items-center justify-between font-bold">
+        <span class="text-red-900">تاريخ التعليق:</span>
+        <span class="text-slate-700">26 سبتمبر 2026</span>
+      </div>
+      <div class="pt-2 border-t border-red-200/60 text-red-950 font-semibold leading-relaxed">
+        <strong>سبب الإيقاف المؤقت:</strong> وردت شكوى رسمية مرفقة بصور تفيد بعدم مطابقة صنف القمح المسلّم (شحنة 15 طن) للمواصفات المعروضة في إعلان البيع، مع وجود خلاف في الوزن عند نقطة التفريغ.
+      </div>
+    </div>
+
+    <!-- Appeal Form -->
+    <form class="space-y-4 text-xs">
+      <div class="space-y-1">
+        <label class="block font-black text-slate-800">تقديم طلب التماس وإعادة النظر (Appeal Request):</label>
+        <p class="text-[11px] text-slate-500">وضح تفاصيل الواقعة وارفق أي وصولات موازين قبان أو إثباتات تثبت التزامك بالشروط:</p>
+      </div>
+
+      <div>
+        <textarea rows="4" placeholder="اكتب ردك ومبرراتك بالتفصيل هنا..." class="w-full p-3 bg-slate-50 border border-slate-300 rounded-2xl outline-none focus:border-red-600 text-slate-900 font-medium"></textarea>
+      </div>
+
+      <div>
+        <label class="block font-bold text-slate-700 mb-1.5">إرفاق وثائق داعمة (صور فحص المزرعة أو وصل القبان):</label>
+        <div class="border-2 border-dashed border-slate-300 hover:border-slate-400 p-4 rounded-2xl text-center cursor-pointer bg-slate-50">
+          <i class="fa-solid fa-cloud-arrow-up text-slate-400 text-xl mb-1"></i>
+          <p class="text-xs text-slate-600 font-bold">انقر لاختيار ملفات الأدلة أو اسحبها هنا</p>
+          <span class="text-[10px] text-slate-400">PDF, JPG, PNG (بحد أقصى 10 ميجابايت)</span>
+        </div>
+      </div>
+
+      <button type="button" class="w-full py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-xl shadow-lg transition text-sm flex items-center justify-center gap-2">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>إرسال الالتماس للمراجعة والتدقيق</span>
+      </button>
+    </form>
+
+    <div class="flex items-center justify-between text-xs pt-2 border-t border-slate-100">
+      <a href="01_تسجيل_الدخول.html" class="text-slate-500 hover:text-slate-800 font-bold flex items-center gap-1">
+        <i class="fa-solid fa-right-from-bracket"></i> تسجيل الخروج
+      </a>
+      <span class="text-slate-400 text-[11px]">مكتب الرقابة: هاتف 770-000-000</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

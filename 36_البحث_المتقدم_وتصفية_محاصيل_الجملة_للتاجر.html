@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البحث المتقدم لمحاصيل الجملة | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="09_لوحة_تحكم_التاجر.html" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <div>
+          <h1 class="font-black text-slate-900 text-sm md:text-base">البحث المتقدم وتصفية صفقات الجملة</h1>
+          <span class="text-[11px] text-slate-500">أدوات مخصصة لتجار الحبوب والخضار والتمور للتعاقد المباشر</span>
+        </div>
+      </div>
+      <a href="03_سوق_المحاصيل_الرئيسي.html" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition">
+        السوق العام
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-4 md:p-6 space-y-6">
+
+    <!-- Search Controls Grid -->
+    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-5">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-100 pb-4">
+        <div class="flex-1 w-full relative">
+          <input type="text" placeholder="اكتب اسم المحصول، الصنف، أو اسم المزارع الموثق..." value="قمح صلب" class="w-full p-3.5 pr-11 bg-slate-50 border border-slate-300 rounded-2xl outline-none focus:border-amber-600 font-bold text-sm">
+          <i class="fa-solid fa-magnifying-glass absolute right-4 top-4 text-slate-400"></i>
+        </div>
+        <button class="w-full md:w-auto px-8 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-2xl shadow transition text-sm flex items-center justify-center gap-2">
+          <i class="fa-solid fa-filter"></i>
+          <span>تطبيق الفلترة (18 نتيجة)</span>
+        </button>
+      </div>
+
+      <!-- Advanced Filter Options -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-bold text-slate-700">
+        <div>
+          <label class="block mb-1 text-slate-500 font-medium">المديرية في الجوف:</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-amber-600">
+            <option>جميع مديريات الجوف</option>
+            <option selected>مديرية المتون</option>
+            <option>مديرية الحزم</option>
+            <option>مديرية الزاهر</option>
+            <option>مديرية الخلق</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1 text-slate-500 font-medium">الحد الأدنى للكمية (حمولة):</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-amber-600">
+            <option>أي كمية متاحة</option>
+            <option selected>حمولات كبيرة (+10 طن / تريلات)</option>
+            <option>حمولات متوسطة (3 - 10 طن)</option>
+            <option>كميات تجزئة (أقل من 3 طن)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1 text-slate-500 font-medium">نظام التعبئة:</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-amber-600">
+            <option selected>أكياس خيش معيارية 50 كجم</option>
+            <option>شحنات سائبة (صب)</option>
+            <option>كراتين مفرغة هواء</option>
+            <option>سلال بلاستيكية</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block mb-1 text-slate-500 font-medium">الترتيب حسب:</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-amber-600">
+            <option selected>السعر: من الأقل للأعلى</option>
+            <option>الكمية الأكبر أولاً</option>
+            <option>الأقرب للخط الإسفلتي</option>
+            <option>الأعلى تقييماً للمزارع</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2 border-t text-xs font-bold text-slate-600">
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" checked class="w-4 h-4 accent-emerald-700">
+          <span class="text-emerald-900 font-bold">مزارع موثقة رسمياً فقط (KYC Verified)</span>
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" checked class="w-4 h-4 accent-amber-600">
+          <span>محاصيل محصودة وجاهزة للتحميل الفوري</span>
+        </label>
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="w-4 h-4 accent-amber-600">
+          <span>يصلح لطريق الشاحنات الثقيلة (تريلا)</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Results Wholesale Grid -->
+    <div class="space-y-4">
+      <div class="flex items-center justify-between text-xs font-bold text-slate-500">
+        <span>عرض النتائج المطابقة لـ "قمح صلب" في "مديرية المتون":</span>
+        <span>18 صفقة جملة متاحة</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Result Card 1 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+          <div class="flex items-start justify-between">
+            <div class="space-y-1">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-0.5 rounded-full">
+                <i class="fa-solid fa-circle-check"></i> مزارع موثق
+              </span>
+              <h3 class="font-black text-slate-900 text-base">قمح صلب بلدي وادي الخارد</h3>
+              <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot text-emerald-600 ml-1"></i>المتون - مزرعة البركة</p>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-base">
+              18,500 <span class="text-xs text-slate-500 font-bold block">ريال / كيس</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 space-y-1 text-xs font-bold">
+            <div class="flex justify-between">
+              <span class="text-slate-500">الكمية المتوفرة:</span>
+              <span class="text-slate-900 font-black">32 طن متري (640 كيس)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">الحد الأدنى للشراء:</span>
+              <span class="text-slate-700">50 كيس (2.5 طن)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">طريق الوصول:</span>
+              <span class="text-emerald-700 font-semibold">ممهد لتريلات 30 طن</span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 pt-2 border-t">
+            <a href="10_نافذة_تقديم_طلب_شراء.html" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-center text-xs shadow transition">
+              تقديم طلب شراء جملة
+            </a>
+            <a href="04_تفاصيل_المحصول_الكاملة.html" class="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center text-xs transition">
+              التفاصيل
+            </a>
+          </div>
+        </div>
+
+        <!-- Result Card 2 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+          <div class="flex items-start justify-between">
+            <div class="space-y-1">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-0.5 rounded-full">
+                <i class="fa-solid fa-circle-check"></i> مزارع موثق
+              </span>
+              <h3 class="font-black text-slate-900 text-base">قمح استرالي مزروع بالجوف</h3>
+              <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot text-emerald-600 ml-1"></i>المتون - سهل الخارد</p>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-base">
+              17,800 <span class="text-xs text-slate-500 font-bold block">ريال / كيس</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 space-y-1 text-xs font-bold">
+            <div class="flex justify-between">
+              <span class="text-slate-500">الكمية المتوفرة:</span>
+              <span class="text-slate-900 font-black">50 طن متري (1,000 كيس)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">الحد الأدنى للشراء:</span>
+              <span class="text-slate-700">100 كيس (5 طن)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">طريق الوصول:</span>
+              <span class="text-emerald-700 font-semibold">إسفلتي مباشر</span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 pt-2 border-t">
+            <a href="10_نافذة_تقديم_طلب_شراء.html" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-center text-xs shadow transition">
+              تقديم طلب شراء جملة
+            </a>
+            <a href="04_تفاصيل_المحصول_الكاملة.html" class="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center text-xs transition">
+              التفاصيل
+            </a>
+          </div>
+        </div>
+
+        <!-- Result Card 3 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:shadow-lg transition space-y-4">
+          <div class="flex items-start justify-between">
+            <div class="space-y-1">
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-0.5 rounded-full">
+                <i class="fa-solid fa-circle-check"></i> مزارع موثق
+              </span>
+              <h3 class="font-black text-slate-900 text-base">قمح صلب عضوي بدون أسمدة</h3>
+              <p class="text-xs text-slate-500"><i class="fa-solid fa-location-dot text-emerald-600 ml-1"></i>المتون - قرية الورش</p>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-base">
+              20,000 <span class="text-xs text-slate-500 font-bold block">ريال / كيس</span>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 space-y-1 text-xs font-bold">
+            <div class="flex justify-between">
+              <span class="text-slate-500">الكمية المتوفرة:</span>
+              <span class="text-slate-900 font-black">20 طن متري (400 كيس)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">الحد الأدنى للشراء:</span>
+              <span class="text-slate-700">40 كيس (2 طن)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">طريق الوصول:</span>
+              <span class="text-amber-700 font-semibold">ممهد لشاحنات دينا</span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 pt-2 border-t">
+            <a href="10_نافذة_تقديم_طلب_شراء.html" class="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-center text-xs shadow transition">
+              تقديم طلب شراء جملة
+            </a>
+            <a href="04_تفاصيل_المحصول_الكاملة.html" class="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center text-xs transition">
+              التفاصيل
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

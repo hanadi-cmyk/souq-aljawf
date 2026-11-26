@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأكيد رمز التحقق OTP | منصة الجوف الزراعية</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-md w-full bg-white p-8 rounded-3xl border border-slate-200 shadow-xl space-y-6 text-center">
+    
+    <!-- Icon & Title -->
+    <div class="space-y-3">
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-800 rounded-3xl flex items-center justify-center text-2xl mx-auto shadow-sm" id="otp-icon-wrap">
+        <i class="fa-solid fa-mobile-screen-button" id="otp-ico"></i>
+      </div>
+      <h1 class="text-2xl font-black text-slate-900" id="otp-title">رمز التحقق والتفعيل</h1>
+      <p class="text-xs text-slate-500" id="otp-desc">
+        تم إرسال رمز التحقق المكون من 4 أرقام لتأكيد حسابك:
+      </p>
+
+      <!-- Target Address Display (Phone or Email) -->
+      <div class="inline-flex items-center gap-2 bg-slate-100 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-slate-800" dir="ltr">
+        <i class="fa-solid fa-mobile-screen text-emerald-700" id="dest-ico"></i>
+        <span id="dest-val">+967 770 123 456</span>
+        <a href="02_إنشاء_حساب_واختيار_الدور.html" title="تعديل الرقم أو الإيميل" class="text-emerald-700 hover:text-emerald-900 mr-1"><i class="fa-solid fa-pen-to-square text-[11px]"></i></a>
+      </div>
+
+      <!-- Channel Switcher to Avoid Bottlenecks -->
+      <div class="p-2.5 bg-emerald-50/70 border border-emerald-200/70 rounded-2xl text-[11px] text-emerald-950 flex items-center justify-between gap-2">
+        <span class="flex items-center gap-1 font-semibold text-slate-700">
+          <i class="fa-solid fa-bolt text-amber-500"></i>
+          <span>لم يصلك الرمز؟ استلمه عبر:</span>
+        </span>
+        <div class="flex gap-1.5">
+          <button type="button" onclick="switchOtpChannel('sms')" id="chan-sms" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-800 text-white shadow-xs">
+            SMS
+          </button>
+          <button type="button" onclick="switchOtpChannel('email')" id="chan-email" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-slate-700 hover:bg-slate-50 border border-slate-200">
+            الإيميل
+          </button>
+          <button type="button" onclick="switchOtpChannel('wa')" id="chan-wa" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-slate-700 hover:bg-slate-50 border border-slate-200">
+            واتساب
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTP Input Boxes (4 Digits) -->
+    <div class="flex justify-center gap-3" dir="ltr">
+      <input type="text" maxlength="1" value="7" class="w-14 h-16 text-center text-2xl font-black rounded-2xl border-2 border-emerald-700 bg-emerald-50/50 outline-none text-emerald-900 focus:ring-2 focus:ring-emerald-700">
+      <input type="text" maxlength="1" value="4" class="w-14 h-16 text-center text-2xl font-black rounded-2xl border-2 border-emerald-700 bg-emerald-50/50 outline-none text-emerald-900 focus:ring-2 focus:ring-emerald-700">
+      <input type="text" maxlength="1" value="2" class="w-14 h-16 text-center text-2xl font-black rounded-2xl border-2 border-emerald-700 bg-emerald-50/50 outline-none text-emerald-900 focus:ring-2 focus:ring-emerald-700">
+      <input type="text" maxlength="1" placeholder="•" class="w-14 h-16 text-center text-2xl font-black rounded-2xl border-2 border-slate-300 bg-slate-50 outline-none text-slate-900 focus:border-emerald-700">
+    </div>
+
+    <!-- Countdown & Resend -->
+    <div class="text-xs space-y-1">
+      <div class="text-slate-500">
+        إعادة إرسال الرمز خلال: <span class="font-mono font-bold text-emerald-800">01:42</span> دقيقة
+      </div>
+      <button disabled class="text-slate-400 font-bold cursor-not-allowed">لم يصلك الرمز؟ إعادة الإرسال</button>
+    </div>
+
+    <!-- Submit Action -->
+    <div class="space-y-3">
+      <a href="05_لوحة_تحكم_المزارع.html" class="block w-full py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-black rounded-xl shadow-lg transition text-sm">
+        تأكيد ومتابعة الدخول
+      </a>
+      <a href="01_تسجيل_الدخول.html" class="block text-xs font-bold text-slate-500 hover:text-slate-700">
+        العودة لتسجيل الدخول
+      </a>
+    </div>
+
+    <div class="pt-2 border-t border-slate-100 flex items-center justify-center gap-1.5 text-[11px] text-slate-400">
+      <i class="fa-solid fa-lock text-emerald-600"></i>
+      <span>تحقق آمن ومشفر بنظام OTP متعدد القنوات لمنع الضغط والتعليق</span>
+    </div>
+
+  </div>
+
+  <script>
+    function switchOtpChannel(chan) {
+      const btnSms = document.getElementById('chan-sms');
+      const btnEmail = document.getElementById('chan-email');
+      const btnWa = document.getElementById('chan-wa');
+      const destVal = document.getElementById('dest-val');
+      const destIco = document.getElementById('dest-ico');
+      const otpIco = document.getElementById('otp-ico');
+
+      const activeCls = "px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-800 text-white shadow-xs";
+      const inactiveCls = "px-2.5 py-1 rounded-lg text-xs font-bold bg-white text-slate-700 hover:bg-slate-50 border border-slate-200";
+
+      btnSms.className = inactiveCls;
+      btnEmail.className = inactiveCls;
+      btnWa.className = inactiveCls;
+
+      if (chan === 'sms') {
+        btnSms.className = activeCls;
+        destVal.innerText = "+967 770 123 456";
+        destIco.className = "fa-solid fa-mobile-screen text-emerald-700";
+        otpIco.className = "fa-solid fa-mobile-screen-button";
+      } else if (chan === 'email') {
+        btnEmail.className = activeCls;
+        destVal.innerText = "farmer@aljawf-agro.ye";
+        destIco.className = "fa-regular fa-envelope text-emerald-700";
+        otpIco.className = "fa-regular fa-envelope";
+      } else if (chan === 'wa') {
+        btnWa.className = activeCls;
+        destVal.innerText = "+967 770 123 456";
+        destIco.className = "fa-brands fa-whatsapp text-emerald-600";
+        otpIco.className = "fa-brands fa-whatsapp";
+      }
+    }
+  </script>
+</body>
+</html>

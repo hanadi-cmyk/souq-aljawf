@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقديم بلاغ ونزاع رسمي | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="16_الصفحة_الرئيسية_العامة_Landing_Page.html" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <div>
+          <h1 class="font-black text-slate-900 text-sm md:text-base">مركز حسم النزاعات والبلاغات الرسمية</h1>
+          <span class="text-[11px] text-slate-500">تقديم الشكاوى للجنة الرقابة والامتثال بمكتب الزراعة بالجوف</span>
+        </div>
+      </div>
+      <a href="22_مركز_المساعدة_والأسئلة_الشائعة_والقوانين.html" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition">
+        لوائح المنصة
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-4 md:p-6 space-y-6">
+
+    <!-- Assurance Notice Banner -->
+    <div class="bg-red-50 border border-red-200 rounded-2xl p-4 flex items-center gap-3 text-xs text-red-950 font-semibold">
+      <div class="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center text-lg shrink-0">
+        <i class="fa-solid fa-scale-balanced"></i>
+      </div>
+      <p>
+        تتم مراجعة كافة البلاغات المرفوعة خلال أقل من 12 ساعة من قبل المشرف العام ومندوب مكتب الزراعة الميداني، مع إمكانية إيقاف مؤقت لأي حساب مخالف لحين إثبات الحقوق.
+      </p>
+    </div>
+
+    <!-- Dispute Filing Form -->
+    <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm space-y-6 text-xs">
+
+      <form class="space-y-5">
+
+        <!-- Linked Transaction Selection -->
+        <div class="space-y-4">
+          <h3 class="font-black text-slate-900 text-sm border-b pb-2 flex items-center gap-2">
+            <i class="fa-solid fa-file-invoice text-red-600"></i> بيانات المعاملة أو الطرف المشكو ضده
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1.5">نوع النزاع أو البلاغ:</label>
+              <select class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-bold outline-none focus:border-red-600">
+                <option selected>نزاع في صفقة شراء محصول (جودة / موازين قبان)</option>
+                <option>نزاع في خدمة شحن ونقل (تأخير / تلف / زيادة في الأجرة)</option>
+                <option>نزاع في مشروع استثماري وشراكة زراعية</option>
+                <option>بلاغ عن حساب وهمي أو انتحال صفة مزارع</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-700 mb-1.5">رقم الصفقة أو الشحنة المرتبطة:</label>
+              <input type="text" value="#ORD-2026-781" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-mono font-bold text-slate-900 outline-none focus:border-red-600">
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-700 mb-1.5">الطرف المشكو ضده:</label>
+              <input type="text" value="المزارع: صالح بن ناصر المتوني (أو الناقل)" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-bold text-slate-900 outline-none focus:border-red-600">
+            </div>
+
+            <div>
+              <label class="block font-bold text-slate-700 mb-1.5">تصنيف سبب الشكوى الدقيق:</label>
+              <select class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl font-semibold outline-none focus:border-red-600">
+                <option selected>المحصول المسلّم لا يطابق النخب الممتاز المعروض (رطوبة عالية)</option>
+                <option>فارق ملحوظ بين وزن المزرعة وسند ميزان القبان المعتمد</option>
+                <option>تأخر الناقل عن موعد التحميل وتلف جزء من الخضار</option>
+                <option>عدم الالتزام بسداد المبلغ المتفق عليه</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description of Incident -->
+        <div class="space-y-2 pt-2">
+          <label class="block font-bold text-slate-700">شرح وتفاصيل الواقعة ومطالبتك العادلة:</label>
+          <textarea rows="4" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-2xl outline-none focus:border-red-600 font-medium" placeholder="اذكر بالتفصيل ما حدث، تاريخ التحميل والتفريغ، أسماء الشهود إن وجدوا، والحل المقترح..."></textarea>
+        </div>
+
+        <!-- Evidence Attachment Box -->
+        <div class="space-y-2 pt-2">
+          <label class="block font-bold text-slate-700">إرفاق وثائق وأدلة الإثبات (صور، وصولات قبان، تسجيلات):</label>
+          <div class="border-2 border-dashed border-red-300 bg-red-50/20 hover:bg-red-50/40 p-6 rounded-2xl text-center cursor-pointer transition">
+            <i class="fa-solid fa-cloud-arrow-up text-red-600 text-2xl mb-1"></i>
+            <p class="font-bold text-slate-800">اسحب ملفات الأدلة هنا أو انقر لاختيارها</p>
+            <span class="text-[10px] text-slate-500">تقبل ملفات الصور و PDF وسندات الموازين (حتى 20 ميجابايت)</span>
+          </div>
+        </div>
+
+        <!-- Dispute Warning Terms -->
+        <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200 text-[11px] text-slate-600 leading-relaxed font-semibold">
+          <i class="fa-solid fa-circle-info text-slate-500 ml-1"></i>
+          يُرجى العلم أن تقديم بلاغات كيدية أو بيانات مضللة يعرض حساب مقدم البلاغ للإيقاف النهائي وفقاً للشروط والأحكام.
+        </div>
+
+        <!-- Form Actions -->
+        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+          <button type="button" class="flex-1 py-3.5 bg-red-600 hover:bg-red-700 text-white font-black rounded-xl text-center shadow-lg transition text-sm flex items-center justify-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>إرسال البلاغ للتحقيق والرقابة</span>
+          </button>
+          <a href="16_الصفحة_الرئيسية_العامة_Landing_Page.html" class="px-6 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center transition">
+            إلغاء والتراجع
+          </a>
+        </div>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

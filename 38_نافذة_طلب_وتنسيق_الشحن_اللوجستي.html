@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب وتنسيق شحن محصول | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-900/60 backdrop-blur-sm min-h-screen flex items-center justify-center p-4">
+
+  <!-- Transport Modal -->
+  <div class="max-w-2xl w-full bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden space-y-6">
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-purple-900 to-slate-900 text-white p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-xl text-purple-300">
+          <i class="fa-solid fa-truck-ramp-box"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-black">طلب وتنسيق شحن محصول زراعي</h2>
+          <span class="text-xs text-purple-200">ربط مباشر مع أسطول وسائقي شاحنات محافظة الجوف</span>
+        </div>
+      </div>
+      <a href="37_شاشة_تتبع_طلبات_الشراء_مع_الإلغاء_المشروط.html" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-sm transition">✕</a>
+    </div>
+
+    <!-- Form Content -->
+    <div class="p-6 pt-0 space-y-4 text-xs">
+
+      <!-- Linked Deal Card -->
+      <div class="bg-purple-50 p-3.5 rounded-2xl border border-purple-200 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] text-purple-700 font-bold block">مرتبط بصفقة الشراء المقبولة:</span>
+          <span class="font-black text-slate-900 text-sm">#ORD-2026-781 (15 طن قمح صلب)</span>
+        </div>
+        <div class="text-left font-bold text-slate-700">
+          <span>المزرعة: المتون (وادي الخارد)</span>
+        </div>
+      </div>
+
+      <!-- Route Pickers -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">نقطة الانطلاق والتحميل (المزرعة):</label>
+          <div class="relative">
+            <input type="text" value="مزرعة البركة - مديرية المتون (إحداثيات GPS مثبتة)" readonly class="w-full p-2.5 pr-8 bg-slate-50 border border-slate-300 rounded-xl font-bold text-slate-800">
+            <i class="fa-solid fa-location-dot absolute right-2.5 top-3 text-emerald-600"></i>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">وجهة التسليم والتفريغ:</label>
+          <div class="relative">
+            <input type="text" value="سوق الحبوب المركزي - أمانة العاصمة صنعاء" class="w-full p-2.5 pr-8 bg-white border border-slate-300 rounded-xl font-bold text-slate-900 outline-none focus:border-purple-600">
+            <i class="fa-solid fa-flag-checkered absolute right-2.5 top-3 text-purple-600"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cargo Specs -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">نوع الشاحنة المطلوبة:</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-bold outline-none focus:border-purple-600">
+            <option selected>تريلا قاطرة ومقطورة (+25 طن)</option>
+            <option>دينا مبردة (للخضار والفاكهة)</option>
+            <option>دينا عادية مع شراع حماية</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">وزن الحمولة الإجمالي:</label>
+          <input type="text" value="15 طن متري (300 كيس)" readonly class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-bold text-slate-800">
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">موعد وجاهزية التحميل:</label>
+          <input type="text" value="غداً، 08:00 صباحاً" class="w-full p-2.5 bg-white border border-slate-300 rounded-xl font-bold text-slate-900 outline-none focus:border-purple-600">
+        </div>
+      </div>
+
+      <!-- Selected Carrier Direct Option -->
+      <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div>
+            <div class="font-black text-slate-900">إرسال الطلب مباشرة للناقل المعتمد:</div>
+            <div class="text-[11px] text-slate-500">شركة الوفاق للشحن الثقيل (تريلات حبوب - لوحة 03-9142)</div>
+          </div>
+        </div>
+        <a href="19_دليل_أسطول_خدمات_النقل.html" class="text-purple-700 font-bold hover:underline">تغيير الناقل</a>
+      </div>
+
+      <!-- Financial Transportation Fee -->
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">أجرة النقل المتفق عليها / المقترحة (ريال يمني):</label>
+        <div class="relative">
+          <input type="number" value="180000" class="w-full p-3 pr-4 border border-slate-300 rounded-xl font-black text-purple-900 outline-none focus:border-purple-700">
+          <span class="absolute left-3 top-3 text-slate-400 font-bold">ريال شامل الديزل والتحميل</span>
+        </div>
+      </div>
+
+      <!-- Modal Actions -->
+      <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row gap-2">
+        <a href="37_شاشة_تتبع_طلبات_الشراء_مع_الإلغاء_المشروط.html" class="flex-1 py-3.5 bg-purple-700 hover:bg-purple-800 text-white font-black rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>إرسال طلب النقل للناقل للتأكيد</span>
+        </a>
+        <a href="37_شاشة_تتبع_طلبات_الشراء_مع_الإلغاء_المشروط.html" class="px-6 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center transition">
+          إلغاء
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

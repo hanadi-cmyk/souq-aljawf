@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأكيد وجدولة موعد النقل | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-900/60 backdrop-blur-sm min-h-screen flex items-center justify-center p-4">
+
+  <!-- Freight Decision Modal -->
+  <div class="max-w-2xl w-full bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden space-y-6">
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-purple-900 to-slate-900 text-white p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-xl text-purple-300">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-black">اتخاذ القرار بطلب النقل: #FRT-2026-904</h2>
+          <span class="text-xs text-purple-200">نقل 15 طن قمح صلب من المتون إلى صنعاء</span>
+        </div>
+      </div>
+      <a href="46_شاشة_إدارة_طلبات_النقل_الواردة_للناقل.html" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-sm transition">✕</a>
+    </div>
+
+    <!-- Content Form -->
+    <div class="p-6 pt-0 space-y-5 text-xs">
+
+      <!-- Summary Info -->
+      <div class="bg-purple-50 p-4 rounded-2xl border border-purple-200 flex items-center justify-between font-bold">
+        <div>
+          <span class="text-purple-700 block text-[11px]">طالب الشحنة:</span>
+          <span class="text-slate-900 text-sm">شركة الشميري للحبوب</span>
+        </div>
+        <div>
+          <span class="text-purple-700 block text-[11px]">أجرة الشحن:</span>
+          <span class="text-purple-950 text-sm font-black">180,000 ريال يمني</span>
+        </div>
+        <div>
+          <span class="text-purple-700 block text-[11px]">نقطة التحميل:</span>
+          <span class="text-slate-800 text-xs">مزرعة البركة (المتون)</span>
+        </div>
+      </div>
+
+      <!-- Scheduling Form Options -->
+      <div class="space-y-4">
+        <h3 class="font-black text-slate-900 text-sm flex items-center gap-2 border-b pb-2">
+          <i class="fa-solid fa-clock text-purple-700"></i> خيار 1: قبول الطلب وجدولة وصول الشاحنة
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">الموعد المؤكد لوصول الشاحنة للمزرعة:</label>
+            <input type="text" value="غداً، تمام الساعة 08:00 صباحاً" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-bold outline-none focus:border-purple-600">
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">اسم السائق المباشر ورقم هاتفه:</label>
+            <input type="text" value="سالم القوسي (هاتف: 770123456)" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-bold outline-none focus:border-purple-600">
+          </div>
+        </div>
+
+        <button class="w-full py-3 bg-purple-700 hover:bg-purple-800 text-white font-black rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2 text-xs">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>تأكيد قبول الطلب وجدولة الرحلة</span>
+        </button>
+      </div>
+
+      <!-- Rejection with Mandatory Reason -->
+      <div class="space-y-3 pt-4 border-t border-slate-200">
+        <h3 class="font-black text-slate-900 text-sm flex items-center gap-2">
+          <i class="fa-solid fa-xmark text-red-600"></i> خيار 2: الاعتذار المسبب عن تنفيذ النقل
+        </h3>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">سبب الاعتذار (سيتم إشعار التاجر والمزارع للبحث عن ناقل آخر):</label>
+          <select class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-semibold outline-none focus:border-red-600">
+            <option>الشاحنة محجوزة في رحلة أخرى بنفس التوقيت</option>
+            <option>الأجرة المعروضة غير مناسبة لتكاليف الديزل</option>
+            <option>صيانة دورية للمركبة أو فحص تبريد</option>
+            <option>الطريق المؤدي للمزرعة لا يناسب حمولة التريلا</option>
+          </select>
+        </div>
+
+        <a href="46_شاشة_إدارة_طلبات_النقل_الواردة_للناقل.html" class="block w-full py-2.5 bg-red-50 hover:bg-red-100 text-red-700 font-bold rounded-xl text-center transition">
+          إرسال الاعتذار وإلغاء الطلب
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

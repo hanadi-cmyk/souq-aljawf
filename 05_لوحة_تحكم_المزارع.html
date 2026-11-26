@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم المزارع | منصة الجوف الزراعية</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>
+    body { font-family: 'Cairo', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-100 min-h-screen text-slate-800 antialiased p-4 sm:p-6 md:p-8">
+
+  <div class="max-w-6xl mx-auto space-y-6">
+
+    <!-- Top Profile Bar -->
+    <header class="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4 w-full sm:w-auto">
+        <div class="w-16 h-16 rounded-2xl bg-emerald-700 text-white flex items-center justify-center text-3xl shadow-md shrink-0">
+          <i class="fa-solid fa-tractor"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg sm:text-xl font-black text-slate-900">المزارع: صالح علي الجوفي</h1>
+            <span class="bg-blue-100 text-blue-800 text-[11px] px-2.5 py-0.5 rounded-full font-bold flex items-center gap-1">
+              <i class="fa-solid fa-circle-check text-blue-600"></i> موثق
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 mt-0.5">
+            <i class="fa-solid fa-location-dot text-emerald-700 ml-1"></i> مزرعة الأمل - مديرية الحزم (15 هكتار)
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+        <a href="13_المحادثة_الفورية_بين_الأطراف.html" class="w-11 h-11 rounded-2xl bg-slate-100 hover:bg-emerald-50 hover:text-emerald-800 text-slate-600 flex items-center justify-center text-lg transition relative shadow-xs" title="المحادثات">
+          <i class="fa-regular fa-comment-dots"></i>
+          <span class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+          <span class="absolute top-2 right-2 w-2.5 h-2.5 rounded-full bg-red-500"></span>
+        </a>
+        <a href="48_مركز_الإشعارات_والتنبيهات_المبوب.html" class="w-11 h-11 rounded-2xl bg-slate-100 hover:bg-emerald-50 hover:text-emerald-800 text-slate-600 flex items-center justify-center text-lg transition relative shadow-xs" title="الإشعارات">
+          <i class="fa-regular fa-bell"></i>
+          <span class="absolute top-1.5 right-1.5 bg-amber-500 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center">3</span>
+        </a>
+        <a href="16_الصفحة_الرئيسية_العامة_Landing_Page.html" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-2xl text-xs font-bold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-house"></i>
+          <span>الرئيسية</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Quick Status Counter Bar -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+      <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-center gap-3">
+        <i class="fa-solid fa-wheat-awn text-emerald-700 text-xl"></i>
+        <div class="text-right">
+          <span class="text-[11px] text-slate-400 block font-semibold">المحاصيل المتاحة</span>
+          <strong class="text-slate-900 text-sm font-black">6 محاصيل نشطة</strong>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-center gap-3">
+        <i class="fa-solid fa-cart-shopping text-amber-600 text-xl"></i>
+        <div class="text-right">
+          <span class="text-[11px] text-slate-400 block font-semibold">طلبات الشراء</span>
+          <strong class="text-amber-700 text-sm font-black">3 طلبات جديدة</strong>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-center gap-3">
+        <i class="fa-solid fa-handshake text-blue-600 text-xl"></i>
+        <div class="text-right">
+          <span class="text-[11px] text-slate-400 block font-semibold">عروض الاستثمار</span>
+          <strong class="text-blue-700 text-sm font-black">2 عروض شراكة</strong>
+        </div>
+      </div>
+      <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-center gap-3">
+        <i class="fa-solid fa-star text-amber-500 text-xl"></i>
+        <div class="text-right">
+          <span class="text-[11px] text-slate-400 block font-semibold">تقييم المزرعة</span>
+          <strong class="text-slate-900 text-sm font-black">4.9 / 5.0 (28 صفقة)</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN ICON-DRIVEN DASHBOARD (لوحة الرموز التفاعلية) -->
+    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+      
+      <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+        <div>
+          <h2 class="text-base sm:text-lg font-black text-slate-900 flex items-center gap-2">
+            <i class="fa-solid fa-shapes text-emerald-700"></i> خدمات وإجراءات المزرعة السريعة
+          </h2>
+          <p class="text-xs text-slate-500">اضغط على أي رمز للوصول المباشر للخدمة أو الإجراء المطلوب</p>
+        </div>
+        <span class="text-[11px] bg-emerald-50 text-emerald-800 font-bold px-3 py-1 rounded-full border border-emerald-200">
+          وضع الرموز السريعة
+        </span>
+      </div>
+
+      <!-- Icon Grid (12 Large, Visual Tiles) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+
+        <!-- 1. Add Crop -->
+        <a href="06_نموذج_إضافة_محصول_جديد.html" class="group bg-gradient-to-b from-emerald-50 to-white hover:from-emerald-100 hover:to-emerald-50 p-6 rounded-3xl border-2 border-emerald-600/30 hover:border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3 relative overflow-hidden">
+          <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-black px-2 py-0.5 rounded-full">إجراء رئيسي</span>
+          <div class="w-16 h-16 rounded-2xl bg-emerald-700 text-white flex items-center justify-center text-3xl shadow-md group-hover:scale-110 transition">
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-emerald-900">إضافة محصول</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">نشر محصول جديد بسوق الجوف</p>
+          </div>
+        </a>
+
+        <!-- 2. Manage Inventory & Crops -->
+        <a href="28_شاشة_إدارة_مخزون_المحاصيل_للمزارع.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-wheat-awn"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-emerald-800">محاصيلي والمخزون</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">تعديل الكميات والأسعار (6)</p>
+          </div>
+        </a>
+
+        <!-- 3. Purchase Orders Received -->
+        <a href="07_طلبات_الشراء_الواردة.html" class="group bg-gradient-to-b from-amber-50 to-white hover:from-amber-100 hover:to-amber-50 p-6 rounded-3xl border-2 border-amber-500/30 hover:border-amber-600 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3 relative">
+          <span class="absolute top-3 left-3 bg-red-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full animate-pulse">3 جديدة</span>
+          <div class="w-16 h-16 rounded-2xl bg-amber-600 text-white flex items-center justify-center text-3xl shadow-md group-hover:scale-110 transition">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-amber-900">طلبات الشراء</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">قبول ورفض عروض التجار</p>
+          </div>
+        </a>
+
+        <!-- 4. Smart AI Assistant (Plant Doctor) -->
+        <a href="08_المساعد_الزراعي_الذكي_AI.html" class="group bg-gradient-to-b from-teal-50 to-white hover:from-teal-100 hover:to-teal-50 p-6 rounded-3xl border-2 border-teal-600/30 hover:border-teal-600 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3 relative">
+          <span class="absolute top-3 left-3 bg-teal-700 text-white text-[10px] font-black px-2 py-0.5 rounded-full">ذكاء اصطناعي</span>
+          <div class="w-16 h-16 rounded-2xl bg-teal-700 text-white flex items-center justify-center text-3xl shadow-md group-hover:scale-110 transition">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-teal-900">المساعد الذكي (AI)</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">تشخيص الآفات واستشارة الري</p>
+          </div>
+        </a>
+
+        <!-- 5. Create Investment Opportunity -->
+        <a href="32_نموذج_طرح_فرصة_استثمارية_جديدة.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-amber-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-amber-800">طرح فرصة استثمار</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">طلب تمويل أو شراكة زراعية</p>
+          </div>
+        </a>
+
+        <!-- 6. Investment Offers & Portfolio -->
+        <a href="31_محفظة_الفرص_الاستثمارية_للمزارع.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-blue-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3 relative">
+          <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full">2 عروض</span>
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-blue-800">عروض المستثمرين</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">مقارنة عروض الشراكة والمفاضلة</p>
+          </div>
+        </a>
+
+        <!-- 7. Transport & Trucks -->
+        <a href="19_دليل_أسطول_خدمات_النقل.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-truck-moving"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-purple-800">طلب شاحنة نقل</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">سائقون محليون لنقل المحصول</p>
+          </div>
+        </a>
+
+        <!-- 8. GPS Farm Location -->
+        <a href="35_خريطة_تحديد_وتثبيت_موقع_المزرعة_GPS.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-red-700">موقع المزرعة (GPS)</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">تثبيت البوابة لوصول الشاحنات</p>
+          </div>
+        </a>
+
+        <!-- 9. Direct Chat -->
+        <a href="13_المحادثة_الفورية_بين_الأطراف.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-sky-800">محادثات الصفقات</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">التواصل مع التجار والناقلين</p>
+          </div>
+        </a>
+
+        <!-- 10. Seasonal Calendar & Weather -->
+        <a href="21_المركز_الإعلامي_ودليل_مواسم_الجوف.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-amber-800">الروزنامة والطقس</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">مواعيد البذر والحصاد وتنبيهات الصقيع</p>
+          </div>
+        </a>
+
+        <!-- 11. Verification KYC -->
+        <a href="15_طلب_توثيق_الحساب_KYC.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-blue-500 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-blue-800">توثيق صك المزرعة</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">رفع الصك وشهادة مكتب الزراعة</p>
+          </div>
+        </a>
+
+        <!-- 12. Account Settings -->
+        <a href="25_إعدادات_الملف_الشخصي_والحساب.html" class="group bg-white hover:bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-slate-400 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col items-center text-center space-y-3">
+          <div class="w-16 h-16 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center text-3xl shadow-xs group-hover:scale-110 transition">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-slate-900 text-sm md:text-base group-hover:text-slate-900">إعدادات المزرعة</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">بيانات الاتصال وكلمة المرور</p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

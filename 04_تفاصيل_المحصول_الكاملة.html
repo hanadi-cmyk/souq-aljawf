@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تفاصيل المحصول الزراعي | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased p-6 md:p-12">
+  <div class="max-w-5xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden p-8 space-y-8">
+    
+    <!-- Top Details -->
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b pb-6">
+      <div>
+        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full">حبوب استراتيجية - قمح الجوف</span>
+        <h1 class="text-2xl sm:text-3xl font-black text-slate-900 mt-2">قمح بلدي صلب درجة أولى (محصول جديد)</h1>
+      </div>
+      <div class="text-left">
+        <div class="text-xs text-slate-400">سعر الوحدة بالجملة</div>
+        <div class="text-3xl font-black text-emerald-800">22,000 <span class="text-sm font-bold text-slate-600">ر.ي / كيس</span></div>
+        <div class="text-xs text-slate-500">كيس خيش 50 كجم صافي</div>
+      </div>
+    </div>
+
+    <!-- Media & Specs Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-3">
+        <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=700&q=80" class="w-full h-72 object-cover rounded-2xl shadow-sm border">
+        <div class="grid grid-cols-3 gap-2">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=200&q=80" class="h-16 w-full object-cover rounded-xl border-2 border-emerald-600">
+          <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=200&q=80" class="h-16 w-full object-cover rounded-xl border opacity-70">
+          <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=200&q=80" class="h-16 w-full object-cover rounded-xl border opacity-70">
+        </div>
+      </div>
+
+      <div class="space-y-6 text-xs">
+        <div class="bg-slate-50 p-4 rounded-2xl border space-y-2.5">
+          <div class="font-bold text-slate-900 text-sm">بيانات المحصول التفصيلية:</div>
+          <div class="flex justify-between border-b pb-1.5"><span class="text-slate-500">الكمية المتوفرة:</span><strong class="text-slate-900">350 كيس (17.5 طن)</strong></div>
+          <div class="flex justify-between border-b pb-1.5"><span class="text-slate-500">أقل كمية للطلب:</span><strong class="text-slate-900">20 كيس</strong></div>
+          <div class="flex justify-between border-b pb-1.5"><span class="text-slate-500">طريقة الري:</span><strong class="text-slate-900">مياه جوفية عذبة بالطاقة الشمسية</strong></div>
+          <div class="flex justify-between border-b pb-1.5"><span class="text-slate-500">الموقع الجغرافي:</span><strong class="text-slate-900">مزرعة الأمل - مديرية الحزم (الجوف)</strong></div>
+          <div class="flex justify-between"><span class="text-slate-500">جاهزية التحميل:</span><strong class="text-emerald-700 font-bold">جاهز ومحزوم في المخزن</strong></div>
+        </div>
+
+        <!-- Farmer Card -->
+        <div class="p-4 rounded-2xl border border-slate-200 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xl">ص</div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm flex items-center gap-1">
+                صالح علي الجوفي
+                <i class="fa-solid fa-circle-check text-blue-500 text-xs" title="حساب موثق"></i>
+              </div>
+              <div class="text-[11px] text-slate-500">مزارع معتمد بالجوف • تقييم ★ 4.9 (28 صفقة)</div>
+            </div>
+          </div>
+          <button class="px-3 py-1.5 border rounded-lg font-bold text-slate-700 hover:bg-slate-50">الملف الشخصي</button>
+        </div>
+
+        <div class="space-y-2">
+          <button class="w-full py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-black rounded-xl text-sm shadow-lg flex items-center justify-center gap-2">
+            <i class="fa-solid fa-cart-plus"></i> تقديم طلب شراء 
+          </button>
+          <div class="grid grid-cols-2 gap-2 font-bold">
+            <button class="py-2.5 border rounded-xl hover:bg-slate-50 flex items-center justify-center gap-1">
+              <i class="fa-regular fa-comment text-emerald-700"></i> محادثة المزارع
+            </button>
+            <button class="py-2.5 border rounded-xl hover:bg-slate-50 flex items-center justify-center gap-1">
+              <i class="fa-solid fa-truck text-emerald-700"></i> طلب شاحنة نقل
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

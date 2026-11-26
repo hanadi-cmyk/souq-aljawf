@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب توثيق الحساب المهني (KYC) | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+
+  <div class="max-w-2xl w-full bg-white rounded-3xl border border-slate-200 shadow-2xl p-8 space-y-6">
+    <div class="flex justify-between items-center border-b pb-4">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl shadow-xs">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-black text-slate-900">طلب توثيق الحساب  </h1>
+          <p class="text-xs text-slate-500">رفع الوثائق الثبوتية لاعتماد حسابك من قبل مشرف المنصة ومكتب الزراعة</p>
+        </div>
+      </div>
+      <button class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+    </div>
+
+    <!-- Instructions -->
+    <div class="bg-blue-50 border border-blue-200 p-4 rounded-2xl text-xs text-blue-950 flex items-start gap-3">
+      <i class="fa-solid fa-shield-halved text-blue-600 text-lg mt-0.5"></i>
+      <div>
+        <strong class="font-bold">فائدة التوثيق:</strong>
+        يمنح حسابك شارة التوثيق الزرقاء، ويزيد ثقة التجار والمستثمرين للتعامل معك، ويُبرز محاصيلك في مقدمة نتائج البحث.
+      </div>
+    </div>
+
+    <!-- Upload Form -->
+    <div class="space-y-4 text-xs">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">الرقم الوطني / رقم الهوية الشخصية:</label>
+        <input type="text" placeholder="مثال: 01010023456" class="w-full p-3 border rounded-xl outline-none focus:border-blue-600 font-bold">
+      </div>
+
+      <!-- Role Selection for KYC -->
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">نوع الحساب المراد توثيقه:</label>
+        <select class="w-full p-3 border rounded-xl outline-none focus:border-blue-600 font-bold bg-slate-50">
+          <option value="farmer">حساب مزارع (مطلوب: صك ملكية، عقد إيجار، أو مشهد زراعي)</option>
+          <option value="trader">حساب تاجر / مشتري (مطلوب: سجل تجاري أو رخصة محل أو إثبات نشاط)</option>
+          <option value="transporter">حساب ناقل / سائق (مطلوب: رخصة قيادة سارية واستمارة الشاحنة/المركبة)</option>
+          <option value="investor">حساب مستثمر (مطلوب: هوية المستثمر أو السجل التجاري)</option>
+        </select>
+      </div>
+
+      <!-- Identity Document -->
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">صورة الهوية الوطنية (البطاقة الشخصية أو جواز السفر):</label>
+        <div class="border-2 border-dashed border-slate-300 bg-slate-50 rounded-2xl p-5 text-center cursor-pointer hover:bg-blue-50/50 hover:border-blue-300 transition">
+          <i class="fa-solid fa-id-card text-2xl text-slate-400 mb-1"></i>
+          <div class="font-bold text-slate-700">اضغط لرفع صورة واضحة للوجهين (أمام وخلف)</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">JPG, PNG أو PDF</div>
+        </div>
+      </div>
+
+      <!-- Role-Specific Document -->
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">الوثيقة المهنية / الثبوتية حسب نوع الحساب:</label>
+        <div class="border-2 border-dashed border-slate-300 bg-slate-50 rounded-2xl p-5 text-center cursor-pointer hover:bg-blue-50/50 hover:border-blue-300 transition">
+          <i class="fa-solid fa-file-contract text-2xl text-slate-400 mb-1"></i>
+          <div class="font-bold text-slate-700">رفع الوثيقة (صك/عقد للمزارع، سجل للتاجر والمستثمر، رخصة/استمارة للناقل)</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">يثبت صفتك النظامية لضمان سلامة التعاملات والتعاقدات</div>
+        </div>
+      </div>
+
+      <div class="bg-slate-50 p-3 rounded-xl border text-[11px] text-slate-500">
+        تتم مراجعة الطلب والمستندات من قِبل إدارة المنصة خلال مدة أقصاها 24 ساعة، وستصلك إشعار فوري بنتيجة الاعتماد.
+      </div>
+
+      <div class="flex justify-end gap-2 pt-2">
+        <button class="px-5 py-2.5 border rounded-xl font-bold text-slate-600 hover:bg-slate-50">إلغاء</button>
+        <button class="px-7 py-2.5 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-xl shadow-lg">
+          إرسال طلب التوثيق للمشرف
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

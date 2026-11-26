@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المحادثة الفورية والتواصل | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased p-6 md:p-10">
+
+  <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden h-[600px] flex flex-col">
+    <!-- Chat Header -->
+    <div class="bg-emerald-900 text-white p-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-emerald-700 border-2 border-emerald-400 flex items-center justify-center font-bold text-sm">
+          ب
+        </div>
+        <div>
+          <div class="font-bold text-sm flex items-center gap-1.5">
+            مؤسسة البركة لتجارة الحبوب
+            <i class="fa-solid fa-circle-check text-blue-400 text-xs" title="حساب موثق"></i>
+          </div>
+          <div class="text-[10px] text-emerald-300">متصل الآن • بخصوص طلب شراء قمح #ORD-8921</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="px-3 py-1.5 bg-emerald-800 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow">
+          <i class="fa-solid fa-phone"></i> اتصال مباشر [FR-14]
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Deal Bar -->
+    <div class="bg-slate-50 border-b border-slate-200 px-6 py-2.5 flex justify-between items-center text-xs">
+      <div>
+        <span class="text-slate-500">الصفقة المرتبطة:</span>
+        <strong class="text-slate-900 mr-1">قمح بلدي صلب (120 كيس)</strong>
+        <span class="text-emerald-700 font-bold mr-2">2,640,000 ر.ي</span>
+      </div>
+      <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded text-[10px]">مقبول ✓</span>
+    </div>
+
+    <!-- Chat Messages Stream -->
+    <div class="flex-1 p-6 overflow-y-auto space-y-4 bg-slate-50/50 text-xs">
+      <!-- Buyer Msg -->
+      <div class="flex justify-start">
+        <div class="bg-white border border-slate-200 p-4 rounded-2xl rounded-tr-none text-slate-800 max-w-md shadow-xs space-y-1">
+          <div class="font-bold text-[10px] text-slate-400">مؤسسة البركة • 02:15 م</div>
+          <p>السلام عليكم يا أخي صالح، أرسلنا لكم طلب شراء 120 كيس قمح بلدي، هل جاهزة للتحميل صباح الغد في مزرعة الأمل بالحزم؟</p>
+        </div>
+      </div>
+
+      <!-- Farmer Msg -->
+      <div class="flex justify-end">
+        <div class="bg-emerald-800 text-white p-4 rounded-2xl rounded-tl-none max-w-md shadow-xs space-y-1">
+          <div class="font-bold text-[10px] text-emerald-300">أنت (المزارع) • 02:18 م</div>
+          <p>وعليكم السلام ورحمة الله، أهلاً بك يا أخي الكريم. نعم القمح مفروز ومعبأ في أكياس 50 كجم جديدة وجاهز في مخزن المزرعة.</p>
+        </div>
+      </div>
+
+      <!-- Buyer Msg -->
+      <div class="flex justify-start">
+        <div class="bg-white border border-slate-200 p-4 rounded-2xl rounded-tr-none text-slate-800 max-w-md shadow-xs space-y-1">
+          <div class="font-bold text-[10px] text-slate-400">مؤسسة البركة • 02:20 م</div>
+          <p>ممتاز جداً! نسقنا مع سائق دينا مبردة وسيصلكم عند الساعة الثامنة صباحاً للتحميل واستلام الفاتورة الخارجية.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Bar -->
+    <div class="p-3 bg-white border-t flex items-center gap-2">
+      <button class="p-2.5 text-slate-400 hover:text-emerald-800 rounded-xl transition"><i class="fa-solid fa-paperclip text-base"></i></button>
+      <input type="text" placeholder="اكتب رسالتك للتنسيق المباشر مع التاجر..." class="flex-1 p-3 bg-slate-50 border rounded-xl outline-none text-xs text-slate-800">
+      <button class="px-5 py-3 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl text-xs shadow flex items-center gap-1.5">
+        <span>إرسال</span>
+        <i class="fa-solid fa-paper-plane text-[10px]"></i>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأكيد تعطيل أو حذف الحساب | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-900/60 backdrop-blur-sm min-h-screen flex items-center justify-center p-4">
+
+  <!-- Modal Dialog -->
+  <div class="max-w-lg w-full bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-2xl space-y-6">
+
+    <!-- Warning Icon & Title -->
+    <div class="flex items-start gap-4">
+      <div class="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center text-xl shrink-0">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <div>
+        <h2 class="text-xl font-black text-slate-900">هل أنت متأكد من رغبتك بحذف أو تعطيل حسابك؟</h2>
+        <p class="text-xs text-slate-500 mt-1">هذا الإجراء سيؤثر بشكل مباشر على نشاطك ومحاصيلك المعروضة في منصة الجوف</p>
+      </div>
+    </div>
+
+    <!-- Impact List -->
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs space-y-2.5">
+      <div class="font-bold text-slate-800">يترتب على هذا الإجراء ما يلي:</div>
+      <ul class="space-y-1.5 text-slate-600">
+        <li class="flex items-center gap-2 text-red-700 font-semibold">
+          <i class="fa-solid fa-circle-xmark text-xs"></i>
+          <span>حذف فوري لكافة عروض المحاصيل والفرص الاستثمارية المطروحة من قبلك.</span>
+        </li>
+        <li class="flex items-center gap-2 text-red-700 font-semibold">
+          <i class="fa-solid fa-circle-xmark text-xs"></i>
+          <span>إلغاء شارة التوثيق المهني (KYC) المعتمدة من مكتب الزراعة.</span>
+        </li>
+        <li class="flex items-center gap-2 text-slate-600 font-semibold">
+          <i class="fa-solid fa-circle-exclamation text-amber-500 text-xs"></i>
+          <span>لا يمكن حذف الحساب إذا كانت هناك صفقات جارية أو شحنات قيد النقل النشط.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Confirmation Inputs -->
+    <div class="space-y-3 text-xs">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">سبب طلب الإلغاء أو المغادرة (اختياري):</label>
+        <select class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl font-semibold outline-none focus:border-red-600">
+          <option>انتهاء الموسم الزراعي الحالي</option>
+          <option>بيع المزرعة أو تسليم النشاط</option>
+          <option>الرغبة في إنشاء حساب جديد بدور مختلف</option>
+          <option>سبب آخر</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">أدخل كلمة المرور الحالية لتأكيد هويتك:</label>
+        <input type="password" placeholder="••••••••" class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-red-600 font-bold">
+      </div>
+    </div>
+
+    <!-- Modal Actions -->
+    <div class="flex flex-col sm:flex-row gap-3 pt-2 border-t border-slate-100">
+      <button class="flex-1 py-3 bg-red-600 hover:bg-red-700 text-white font-black rounded-xl text-xs shadow-md transition flex items-center justify-center gap-2">
+        <i class="fa-solid fa-trash-can"></i>
+        <span>تأكيد حذف الحساب نهائياً</span>
+      </button>
+      <a href="25_إعدادات_الملف_الشخصي_والحساب.html" class="flex-1 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-xs text-center transition">
+        إلغاء والتراجع
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

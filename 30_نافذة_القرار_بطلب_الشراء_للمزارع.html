@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نافذة اتخاذ القرار بطلب الشراء | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-900/60 backdrop-blur-sm min-h-screen flex items-center justify-center p-4">
+
+  <!-- Decision Modal -->
+  <div class="max-w-2xl w-full bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden space-y-6">
+
+    <!-- Modal Header -->
+    <div class="bg-gradient-to-r from-emerald-900 to-slate-900 text-white p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-xl text-emerald-300">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-black">طلب شراء جملة وارد: #ORD-2026-781</h2>
+          <span class="text-xs text-emerald-200">ورد بتاريخ: اليوم، 03:15 م (قيد انتظار قرارك)</span>
+        </div>
+      </div>
+      <a href="07_طلبات_الشراء_الواردة.html" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-sm transition">✕</a>
+    </div>
+
+    <!-- Modal Content -->
+    <div class="p-6 pt-0 space-y-5 text-xs">
+
+      <!-- Trader Info Box -->
+      <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-lg font-black">
+            ش
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5 font-black text-slate-900 text-sm">
+              <span>شركة الشميري لتجارة وتوزيع الحبوب</span>
+              <i class="fa-solid fa-circle-check text-emerald-600 text-xs" title="تاجر موثق"></i>
+            </div>
+            <p class="text-slate-500">سجل تجاري: #CR-SAN-8821 | المركز: أمانة العاصمة</p>
+          </div>
+        </div>
+        <div class="text-left font-bold">
+          <div class="text-amber-500">★★★★★ 4.9</div>
+          <div class="text-slate-400 text-[10px]">35 صفقة مكتملة بالجوف</div>
+        </div>
+      </div>
+
+      <!-- Order Details Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div class="bg-emerald-50/60 p-3 rounded-xl border border-emerald-200">
+          <span class="text-slate-500 block mb-0.5">المحصول المطلوب:</span>
+          <span class="font-black text-slate-900 text-sm">قمح صلب نخب أول</span>
+        </div>
+        <div class="bg-emerald-50/60 p-3 rounded-xl border border-emerald-200">
+          <span class="text-slate-500 block mb-0.5">الكمية المطلوبة:</span>
+          <span class="font-black text-emerald-800 text-sm">15 طن (300 كيس)</span>
+        </div>
+        <div class="bg-emerald-50/60 p-3 rounded-xl border border-emerald-200">
+          <span class="text-slate-500 block mb-0.5">القيمة الإجمالية للصفقة:</span>
+          <span class="font-black text-amber-700 text-sm">5,550,000 ريال</span>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+          <span class="text-slate-500 block mb-0.5">موعد التحميل المقترح:</span>
+          <span class="font-bold text-slate-800">غداً صباحاً (08:00 ص)</span>
+        </div>
+        <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 sm:col-span-2">
+          <span class="text-slate-500 block mb-0.5">وسيلة النقل المنسقة:</span>
+          <span class="font-bold text-slate-800">شاحنة تريلا تابعة للتاجر مع سائق معتمد (لوحة 03-9142)</span>
+        </div>
+      </div>
+
+      <!-- Trader Custom Note -->
+      <div class="bg-amber-50 p-3 rounded-xl border border-amber-200 text-amber-950 font-semibold leading-relaxed">
+        <i class="fa-solid fa-comment-dots text-amber-600 ml-1"></i>
+        <strong>ملاحظة التاجر:</strong> "نرغب بمعاينة وزن أول 50 كيس بقبان الحزم المعتمد والتسليم فوري نقداً عند اكتمال وزن الشاحنة."
+      </div>
+
+      <!-- Rejection Reason Option (Collapsible in real app) -->
+      <div class="border border-slate-200 p-3 rounded-xl space-y-2">
+        <label class="block font-bold text-slate-700">في حال الرفض، يرجى تحديد السبب لإشعار التاجر:</label>
+        <select class="w-full p-2 bg-slate-50 border border-slate-300 rounded-lg font-semibold outline-none focus:border-red-600">
+          <option>الكمية المتبقية تم حجزها لصفقة أخرى</option>
+          <option>السعر المعروض أقل من السعر المحدد</option>
+          <option>موعد التحميل غير ملائم لجدول الحصاد</option>
+          <option>سبب آخر</option>
+        </select>
+      </div>
+
+      <!-- 3 Primary Decision Actions -->
+      <div class="pt-2 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+        <!-- Accept Button -->
+        <a href="07_طلبات_الشراء_الواردة.html" class="flex-1 py-3 bg-emerald-800 hover:bg-emerald-900 text-white font-black rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-check"></i>
+          <span>قبول الطلب وتأكيد التحميل</span>
+        </a>
+
+        <!-- Negotiate via Chat Button -->
+        <a href="13_المحادثة_الفورية_بين_الأطراف.html" class="flex-1 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-center shadow transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-comments"></i>
+          <span>فتح شات والتفاوض</span>
+        </a>
+
+        <!-- Reject Button -->
+        <a href="07_طلبات_الشراء_الواردة.html" class="px-5 py-3 bg-red-50 hover:bg-red-100 text-red-700 font-bold rounded-xl text-center transition flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-xmark"></i>
+          <span>رفض الطلب</span>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

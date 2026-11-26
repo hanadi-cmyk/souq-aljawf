@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بوابة خدمات النقل واللوجستيات | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased p-6 md:p-10 space-y-6">
+
+  <!-- Carrier Header -->
+  <div class="max-w-6xl mx-auto bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-4">
+      <div class="w-16 h-16 rounded-2xl bg-purple-100 border-2 border-purple-600 flex items-center justify-center text-purple-700 text-2xl font-bold">
+        <i class="fa-solid fa-truck-moving"></i>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <h1 class="text-xl font-black text-slate-900">الناقل: مكتب الصمود للشحن والنقل الزراعي</h1>
+          <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-0.5 rounded-full font-bold">ناقل موثق ✓</span>
+        </div>
+        <p class="text-xs text-slate-500 mt-1">خدمات نقل وشحن المحاصيل من مزارع الجوف إلى كافة المحافظات اليمنية</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-xs text-slate-500 font-bold">حالة التوفر:</span>
+      <span class="bg-emerald-100 text-emerald-800 px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> متاح لنقل شحنة الآن
+      </span>
+    </div>
+  </div>
+
+  <!-- Vehicle Specs & Coverage Grid -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+    
+    <!-- Specs [FR-27] -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4">
+      <div class="font-bold text-slate-900 text-sm flex items-center justify-between border-b pb-2">
+        <span>بيانات المركبة المسجلة [FR-27]</span>
+        <button class="text-emerald-700 hover:underline">تعديل البيانات</button>
+      </div>
+
+      <div class="space-y-2">
+        <div class="flex justify-between p-2.5 bg-slate-50 rounded-xl"><span class="text-slate-500">نوع المركبة:</span><strong class="text-slate-900">دينا نقل مبردة (إيسوزو 2022)</strong></div>
+        <div class="flex justify-between p-2.5 bg-slate-50 rounded-xl"><span class="text-slate-500">سعة الحمولة:</span><strong class="text-slate-900">7.5 طن (أو 400 سلة خضار)</strong></div>
+        <div class="flex justify-between p-2.5 bg-slate-50 rounded-xl"><span class="text-slate-500">رقم اللوحة:</span><strong class="text-slate-900">4329 / نقل الجوف</strong></div>
+        <div class="flex justify-between p-2.5 bg-slate-50 rounded-xl"><span class="text-slate-500">المحاصيل المدعومة:</span><strong class="text-emerald-800">طماطم، خضار وفواكه طازجة، تمور</strong></div>
+      </div>
+    </div>
+
+    <!-- Routes & Coverage [FR-28] -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4">
+      <div class="font-bold text-slate-900 text-sm border-b pb-2">
+        <span>مناطق التغطية وخطوط السير بالجوف وخارجها [FR-28]</span>
+      </div>
+
+      <div class="space-y-2 text-slate-700">
+        <div class="flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i>
+          <span>تغطية داخلية: مديريات الحزم، المتون، الزاهر، الخلق</span>
+        </div>
+        <div class="flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i>
+          <span>خط الجوف ⇋ صنعاء (سوق علي محسن المركزي)</span>
+        </div>
+        <div class="flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl">
+          <i class="fa-solid fa-circle-check text-emerald-600"></i>
+          <span>خط الجوف ⇋ مأرب وسيئون</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Incoming Transport Requests [FR-30] -->
+  <div class="max-w-6xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-sm p-6 space-y-4 text-xs">
+    <h2 class="font-bold text-slate-900 text-sm">طلبات الشحن الواردة من المزارعين والتجار [FR-30]</h2>
+    
+    <div class="border-2 border-emerald-300 bg-emerald-50/20 rounded-2xl p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div>
+        <div class="font-bold text-slate-900 text-sm">طلب شحن: نقل قمح صلب من مزرعة النور إلى صنعاء</div>
+        <div class="text-slate-500 mt-1">العميل: مؤسسة البركة • الحمولة: 6 طن (120 كيس) • تاريخ التحميل: بعد غد 08:00 ص</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-xl shadow">
+          قبول وتأكيد الموعد
+        </button>
+        <button class="px-4 py-2 bg-red-100 hover:bg-red-200 text-red-700 font-bold rounded-xl">
+          اعتذار
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

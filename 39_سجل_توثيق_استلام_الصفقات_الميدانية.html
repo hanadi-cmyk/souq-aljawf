@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توثيق استلام الصفقة ميدانياً | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="37_شاشة_تتبع_طلبات_الشراء_مع_الإلغاء_المشروط.html" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center transition">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <div>
+          <h1 class="font-black text-slate-900 text-sm md:text-base">نموذج توثيق استلام الشحنة الميدانية</h1>
+          <span class="text-[11px] text-slate-500">إثبات استلام وتفريغ المحصول وتفعيل نظام التقييم المشروط</span>
+        </div>
+      </div>
+      <span class="bg-emerald-100 text-emerald-800 text-xs font-black px-3 py-1 rounded-full">
+        طلب #ORD-2026-781
+      </span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-4 md:p-6 space-y-6">
+
+    <!-- Transaction Summary Card -->
+    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b pb-4">
+        <div>
+          <span class="text-xs text-slate-400 font-bold block">تفاصيل الصفقة المتعاقد عليها:</span>
+          <h2 class="text-lg font-black text-slate-900">شحنة 15 طن قمح صلب بلدي (300 كيس)</h2>
+          <p class="text-xs text-slate-500">المزارع: صالح بن ناصر المتوني | الناقل: شركة الوفاق (تريلا 03-9142)</p>
+        </div>
+        <div class="text-left">
+          <span class="text-xs text-slate-400 font-bold block">القيمة الإجمالية:</span>
+          <span class="text-xl font-black text-emerald-800">5,550,000 ريال يمني</span>
+        </div>
+      </div>
+
+      <!-- Verification Inputs -->
+      <form class="space-y-4 text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">الوزن الفعلي المستلم بعد وزن القبان (طن):</label>
+            <div class="relative">
+              <input type="number" step="0.01" value="15.05" class="w-full p-3 pr-4 border border-slate-300 rounded-xl font-black text-slate-900 outline-none focus:border-emerald-700">
+              <span class="absolute left-3 top-3 text-slate-400 font-bold">طن متري</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1.5">عدد الأكياس الفعلية المستلمة:</label>
+            <input type="number" value="300" class="w-full p-3 border border-slate-300 rounded-xl font-bold text-slate-900 outline-none focus:border-emerald-700">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1.5">تقييم مطابقة جودة المحصول عند المعاينة:</label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <label class="border-2 border-emerald-600 bg-emerald-50/40 p-3 rounded-2xl flex items-center gap-2 cursor-pointer font-bold text-emerald-950">
+              <input type="radio" name="qual" checked class="accent-emerald-700">
+              <span>مطابق 100% للمواصفات ونخب ممتاز</span>
+            </label>
+            <label class="border border-slate-200 p-3 rounded-2xl flex items-center gap-2 cursor-pointer font-bold text-slate-700 hover:bg-slate-50">
+              <input type="radio" name="qual" class="accent-emerald-700">
+              <span>مطابق مع ملاحظات طفيفة بالرطوبة</span>
+            </label>
+            <label class="border border-slate-200 p-3 rounded-2xl flex items-center gap-2 cursor-pointer font-bold text-slate-700 hover:bg-slate-50">
+              <input type="radio" name="qual" class="accent-emerald-700">
+              <span>غير مطابق (فتح نزاع رسمي)</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1.5">إرفاق صورة وصل ميزان القبان أو محضر التسليم الموقع:</label>
+          <div class="border-2 border-dashed border-slate-300 hover:border-slate-400 p-5 rounded-2xl text-center cursor-pointer bg-slate-50">
+            <i class="fa-solid fa-receipt text-emerald-700 text-2xl mb-1"></i>
+            <p class="font-bold text-slate-800">ارفع صورة سند القبان أو كشف الاستلام</p>
+            <span class="text-[10px] text-slate-400">توثيق الوزن بالوصل يحمي حقوق المزارع والتاجر في سجل النظام</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1.5">ملاحظات توثيقية إضافية:</label>
+          <textarea rows="2" placeholder="تم استلام الشحنة وتفريغها في مخازن أمانة العاصمة وسداد السائق والمزارع كاملاً..." class="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl outline-none focus:border-emerald-700"></textarea>
+        </div>
+
+        <div class="p-3 bg-emerald-50 rounded-2xl border border-emerald-200 text-[11px] text-emerald-950 font-semibold leading-relaxed">
+          <i class="fa-solid fa-circle-check text-emerald-600 ml-1"></i>
+          بمجرد النقر على زر التأكيد أدناه، سيتم قيد الصفقة كـ <strong>"مكتملة ومستلمة بنجاح"</strong> وسيتاح لك تقييم المزارع والناقل بموجب التعامل الفعلي.
+        </div>
+
+        <div class="pt-4 border-t flex flex-col sm:flex-row gap-3">
+          <a href="50_نافذة_تقييم_المعاملة_المكتملة_المشروطة.html" class="flex-1 py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-black rounded-xl text-center shadow-lg transition text-sm flex items-center justify-center gap-2">
+            <i class="fa-solid fa-clipboard-check"></i>
+            <span>تأكيد الاستلام والانتقال للتقييم</span>
+          </a>
+          <a href="37_شاشة_تتبع_طلبات_الشراء_مع_الإلغاء_المشروط.html" class="px-6 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center transition">
+            رجوع
+          </a>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>إضافة محصول زراعي جديد | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased p-6 md:p-10">
+
+  <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden p-8 space-y-6">
+    <div class="border-b pb-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-black text-slate-900 mt-2"> إضافة محصول زراعي جديد لسوق الجوف</h1>
+        <p class="text-xs text-slate-500">أدخل كافة مواصفات المحصول بدقة لتسهيل وصول التجار والمشترين إليك</p>
+      </div>
+      <button class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs">
+      <div class="space-y-4">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">اسم المحصول الرئيسي:</label>
+          <input type="text" placeholder="مثال: قمح بلدي، طماطم بيوت محمية، تمر برحي..." class="w-full p-3 border rounded-xl outline-none focus:border-emerald-700 font-bold">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">نوع / صنف المحصول:</label>
+            <input type="text" placeholder="صنف مأربي، خلاص..." class="w-full p-3 border rounded-xl">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">تاريخ الحصاد / التوفر:</label>
+            <input type="date" class="w-full p-3 border rounded-xl">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">الكمية المتاحة:</label>
+            <input type="number" placeholder="500" class="w-full p-3 border rounded-xl font-bold text-emerald-800">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">وحدة القياس:</label>
+            <select class="w-full p-3 border rounded-xl font-bold">
+              <option>كيس (50 كجم)</option>
+              <option>طن متري</option>
+              <option>سلة (20 كجم)</option>
+              <option>كرتون</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">السعر للوحدة (ر.ي):</label>
+            <input type="number" placeholder="22000" class="w-full p-3 border rounded-xl font-bold text-emerald-800">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">وصف المنتج:</label>
+          <textarea rows="3" placeholder="طريقة الري، نوع التقاوي، التعبئة في أكياس محكمة..." class="w-full p-3 border rounded-xl"></textarea>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">صور المحصول الميدانية (حتى 5 صور):</label>
+          <div class="border-2 border-dashed border-emerald-300 bg-emerald-50/40 rounded-2xl p-6 text-center cursor-pointer hover:bg-emerald-50 transition">
+            <i class="fa-solid fa-cloud-arrow-up text-3xl text-emerald-600 mb-2"></i>
+            <div class="font-bold text-slate-800">اضغط لرفع صور حية من الحقل والمحصول</div>
+            <div class="text-[10px] text-slate-400 mt-1">PNG, JPG بحد أقصى 10 ميجابايت</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label class="font-bold text-slate-700">تحديد موقع المزرعة على الخريطة [FR-24]:</label>
+            <span class="text-[11px] text-emerald-700 font-bold cursor-pointer flex items-center gap-1">
+              <i class="fa-solid fa-location-crosshairs"></i> تحديد عبر GPS
+            </span>
+          </div>
+          <div class="h-32 bg-slate-200 rounded-2xl border flex items-center justify-center relative overflow-hidden text-slate-500">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover opacity-60">
+            <div class="absolute bg-white px-3 py-1.5 rounded-lg shadow font-bold text-[11px] text-slate-800 flex items-center gap-1.5">
+              <i class="fa-solid fa-location-dot text-red-600"></i> الحزم - مزرعة الأمل (موقع مثبت)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-end gap-3 pt-4 border-t">
+      <button class="px-5 py-2.5 border rounded-xl font-bold text-xs hover:bg-slate-50">حفظ كمسودة</button>
+      <button class="px-7 py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl text-xs shadow-lg">نشر المحصول في سوق الجوف الآن</button>
+    </div>
+  </div>
+
+</body>
+</html>

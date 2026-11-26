@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>إنشاء حساب جديد | منصة الجوف الزراعية</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-xl w-full bg-white p-8 rounded-3xl border border-slate-200 shadow-xl space-y-6">
+    <div class="text-center space-y-1">
+      <h1 class="text-2xl font-black text-slate-900">إنشاء حساب جديد</h1>
+      <p class="text-xs text-slate-500">اختر دورك في القطاع الزراعي بمحافظة الجوف للانضمام للمنصة</p>
+    </div>
+
+    <!-- Role Selection 4 Cards -->
+    <div class="space-y-2 text-xs">
+      <label class="block font-bold text-slate-700">حدد نوع الحساب (الدور في النظام):</label>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="p-3.5 rounded-2xl border-2 border-emerald-700 bg-emerald-50 text-emerald-950 font-bold cursor-pointer text-center space-y-1 shadow-xs">
+          <i class="fa-solid fa-wheat-awn text-2xl text-emerald-700"></i>
+          <div>مزارع / منتج</div>
+          <div class="text-[10px] text-emerald-600 font-normal">عرض المحاصيل والاستثمار</div>
+        </div>
+        <div class="p-3.5 rounded-2xl border border-slate-200 hover:border-emerald-400 cursor-pointer text-center space-y-1">
+          <i class="fa-solid fa-cart-shopping text-2xl text-slate-600"></i>
+          <div class="font-bold text-slate-800">تاجر / مشتري</div>
+          <div class="text-[10px] text-slate-400">شراء بالجملة وتنسيق النقل</div>
+        </div>
+        <div class="p-3.5 rounded-2xl border border-slate-200 hover:border-emerald-400 cursor-pointer text-center space-y-1">
+          <i class="fa-solid fa-hand-holding-dollar text-2xl text-slate-600"></i>
+          <div class="font-bold text-slate-800">مستثمر زراعي</div>
+          <div class="text-[10px] text-slate-400">تمويل وشراكات زراعية</div>
+        </div>
+        <div class="p-3.5 rounded-2xl border border-slate-200 hover:border-emerald-400 cursor-pointer text-center space-y-1">
+          <i class="fa-solid fa-truck-fast text-2xl text-slate-600"></i>
+          <div class="font-bold text-slate-800">ناقل  </div>
+          <div class="text-[10px] text-slate-400">شحن ونقل المحاصيل</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registration Fields -->
+    <div class="space-y-3.5 text-xs">
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">الاسم الكامل:</label>
+        <input type="text" placeholder="الاسم الثلاثي أو اسم المؤسسة الزراعية" class="w-full p-3 border border-slate-300 rounded-xl outline-none focus:border-emerald-700 text-slate-900">
+      </div>
+
+      <!-- Method Selector: Phone or Email -->
+      <div class="space-y-1.5">
+        <div class="flex items-center justify-between">
+          <label class="block font-bold text-slate-700">طريقة التسجيل والتفعيل:</label>
+          <span class="text-[10px] text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded-full font-bold">
+          </span>
+        </div>
+        <div class="grid grid-cols-2 gap-2 p-1 bg-slate-100 rounded-xl">
+          <button type="button" id="reg-tab-phone" onclick="setRegMethod('phone')" class="py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition bg-white text-emerald-900 shadow-xs border border-slate-200">
+            <i class="fa-solid fa-mobile-screen text-emerald-700"></i>
+            <span>برقم الهاتف (SMS)</span>
+          </button>
+          <button type="button" id="reg-tab-email" onclick="setRegMethod('email')" class="py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition text-slate-600 hover:text-slate-900">
+            <i class="fa-regular fa-envelope text-slate-500"></i>
+            <span>بالبريد الإلكتروني</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contact input & District -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label id="reg-contact-lbl" class="block font-bold text-slate-700 mb-1">رقم الهاتف:</label>
+          <div class="relative">
+            <input id="reg-contact-inp" type="tel" placeholder="مثال: 770000000" class="w-full p-3 pr-10 border border-slate-300 rounded-xl outline-none focus:border-emerald-700 font-bold text-slate-900">
+            <i id="reg-contact-ico" class="fa-solid fa-phone absolute right-3.5 top-3.5 text-slate-400"></i>
+          </div>
+          <p id="reg-contact-hint" class="text-[10px] text-slate-500 mt-1">يصلك رمز التحقق OTP في رسالة نصية قصيرة</p>
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">المديرية في الجوف:</label>
+          <select class="w-full p-3 border border-slate-300 rounded-xl outline-none focus:border-emerald-700 font-medium bg-white text-slate-800">
+            <option>مديرية الحزم</option>
+            <option>مديرية المتون</option>
+            <option>مديرية الزاهر</option>
+            <option>مديرية الخلق</option>
+            <option>مديرية برط العنان</option>
+            <option>مديرية خب والشعف</option>
+          </select>
+          <p class="text-[10px] text-slate-400 mt-1">لتوجيه الخدمات الزراعية الأقرب لك</p>
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">تعيين كلمة المرور:</label>
+        <div class="relative">
+          <input type="password" placeholder="••••••••" class="w-full p-3 pr-10 border border-slate-300 rounded-xl outline-none focus:border-emerald-700 text-slate-900">
+          <i class="fa-solid fa-lock absolute right-3.5 top-3.5 text-slate-400"></i>
+        </div>
+        <p class="text-[10px] text-slate-400 mt-1">يجب أن تحتوي على 8 خانات على الأقل</p>
+      </div>
+
+      <a href="23_شاشة_رمز_التحقق_الهاتف_OTP.html" class="block text-center w-full py-3.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold rounded-xl text-sm shadow-lg mt-2 transition">
+        إنشاء الحساب ومتابعة التحقق
+      </a>
+
+      <div class="text-center text-slate-500 pt-1">
+        لديك حساب بالفعل؟ <a href="01_تسجيل_الدخول.html" class="text-emerald-800 font-bold hover:underline">تسجيل الدخول</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function setRegMethod(method) {
+      const btnPhone = document.getElementById('reg-tab-phone');
+      const btnEmail = document.getElementById('reg-tab-email');
+      const lbl = document.getElementById('reg-contact-lbl');
+      const inp = document.getElementById('reg-contact-inp');
+      const ico = document.getElementById('reg-contact-ico');
+      const hint = document.getElementById('reg-contact-hint');
+
+      if (method === 'phone') {
+        btnPhone.className = "py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition bg-white text-emerald-900 shadow-xs border border-slate-200";
+        btnEmail.className = "py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition text-slate-600 hover:text-slate-900";
+        lbl.innerText = "رقم الهاتف:";
+        inp.type = "tel";
+        inp.placeholder = "مثال: 770000000";
+        ico.className = "fa-solid fa-phone absolute right-3.5 top-3.5 text-slate-400";
+        hint.innerText = "يصلك رمز التحقق OTP في رسالة نصية قصيرة SMS";
+      } else {
+        btnEmail.className = "py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition bg-white text-emerald-900 shadow-xs border border-slate-200";
+        btnPhone.className = "py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-1.5 transition text-slate-600 hover:text-slate-900";
+        lbl.innerText = "البريد الإلكتروني:";
+        inp.type = "email";
+        inp.placeholder = "مثال: farmer@aljawf-agro.ye";
+        ico.className = "fa-solid fa-envelope absolute right-3.5 top-3.5 text-slate-400";
+        hint.innerText = "يصلك كود التحقق السريع فوراً إلى بريدك الإلكتروني (تفعيل فوري وبدون ضغط)";
+      }
+    }
+  </script>
+</body>
+</html>

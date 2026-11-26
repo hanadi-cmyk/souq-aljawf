@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معاينة وثيقة الملكية المعتمدة | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-black/85 backdrop-blur-md min-h-screen flex flex-col justify-between p-4 md:p-6 text-white">
+
+  <!-- Lightbox Top HUD Controls -->
+  <header class="max-w-6xl mx-auto w-full flex items-center justify-between pb-4 border-b border-white/10 shrink-0">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-lg">
+        <i class="fa-solid fa-file-shield"></i>
+      </div>
+      <div>
+        <h1 class="text-sm md:text-base font-black flex items-center gap-2">
+          <span>صك ملكية الأرض الزراعية (البصيرة الشرعية)</span>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">معمد ومطابق</span>
+        </h1>
+        <p class="text-[11px] text-slate-400">مرتبط بالمشروع الاستثماري #INV-JOW-2026-08 - الشيخ صالح المتوني</p>
+      </div>
+    </div>
+
+    <!-- Zoom & Viewer Controls -->
+    <div class="flex items-center gap-2 text-xs">
+      <button title="تكبير" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+      <button title="تصغير" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+      <button title="تدوير" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition"><i class="fa-solid fa-rotate-right"></i></button>
+      <button title="تنزيل PDF" class="px-3 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-600 font-bold transition flex items-center gap-1.5"><i class="fa-solid fa-download"></i> تحميل</button>
+      <a href="18_تفاصيل_الفرصة_الاستثمارية_العميقة.html" class="w-9 h-9 rounded-lg bg-red-600/30 hover:bg-red-600 text-red-300 hover:text-white flex items-center justify-center transition font-bold text-sm">✕</a>
+    </div>
+  </header>
+
+  <!-- Document Preview Canvas -->
+  <main class="flex-1 flex items-center justify-center p-4 overflow-auto">
+    <div class="max-w-2xl w-full bg-white text-slate-900 rounded-2xl shadow-2xl p-8 space-y-6 border border-slate-200 relative select-none">
+      
+      <!-- Watermark Background Seal -->
+      <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+        <i class="fa-solid fa-stamp text-[280px]"></i>
+      </div>
+
+      <!-- Legal Document Header -->
+      <div class="border-b-2 border-slate-900 pb-4 flex justify-between items-center text-xs font-bold">
+        <div class="text-right">
+          <div>الجمهورية اليمنية</div>
+          <div>وزارة العدل - محكمة الجوف الابتدائية</div>
+          <div>سجل التوثيق العقاري والشرعي</div>
+        </div>
+        <div class="w-16 h-16 rounded-full border-2 border-emerald-800 flex items-center justify-center text-emerald-800 text-xs text-center font-black p-1">
+          معمد رسمياً
+        </div>
+      </div>
+
+      <!-- Content Simulated Document -->
+      <div class="space-y-3 text-xs leading-relaxed text-justify font-serif">
+        <div class="text-center font-black text-sm text-slate-900 pb-2">
+          وثيقة ملكية زراعية (بصيرة تملك أصلية)
+        </div>
+        <p>
+          الحمد لله وحده، بموجب هذا الصك الشرعي المعتمد، نشهد بأن الأرض الزراعية الواقعة في <strong>محافظة الجوف - مديرية المتون - حوض وادي الخارد</strong> بمساحة إجمالية قدرها <strong>400,000 متر مربع (أربعون هكتاراً)</strong>، والحدود من الشرق وادي الخارد، ومن الغرب طريق العروق، ومن الشمال أملاك فلان، ومن الجنوب الطريق الممهد؛ هي ملك شرعي ثابت ومخلص للمواطن: <strong>صالح بن ناصر هادي المتوني</strong>.
+        </p>
+        <p>
+          وقد ثبت خلوها من أي نزاعات أو رهونات أو أوقاف، وصدر هذا التوثيق الرسمي للإشهاد والعمل بموجبه لكافة التصرفات الزراعية والاستثمارية.
+        </p>
+      </div>
+
+      <!-- Endorsements & Signatures Footer -->
+      <div class="pt-6 border-t border-slate-200 flex justify-between items-end text-xs font-bold">
+        <div>
+          <span class="text-slate-500 block text-[10px]">تاريخ القيد والتسجيل:</span>
+          <span>14 رجب 1445 هـ (معتمد)</span>
+        </div>
+        <div class="text-center space-y-1">
+          <div class="text-emerald-800 font-black"><i class="fa-solid fa-stamp"></i> ختم قاضي التوثيق بالمحكمة</div>
+          <div class="text-[10px] text-slate-400 font-mono">VERIFIED-DOC-JOW-4091</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Bottom Details Bar -->
+  <footer class="max-w-6xl mx-auto w-full text-center text-xs text-slate-400 pt-3 border-t border-white/10 shrink-0">
+    تم تدقيق هذه الوثيقة من قبل الإدارة القانونية بمكتب الزراعة بالجوف ومطابقة رقم القيد بسجلات المحكمة.
+  </footer>
+
+</body>
+</html>

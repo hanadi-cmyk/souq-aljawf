@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>سوق المحاصيل الزراعية | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased">
+
+  <!-- Navbar -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center text-xl">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <div class="font-black text-emerald-950 text-base">منصة الجوف الزراعية الذكية</div>
+      </div>
+      <div class="flex items-center gap-6 text-xs font-bold text-slate-600">
+        <span class="text-emerald-800 font-black cursor-pointer">سوق المحاصيل</span>
+        <span class="hover:text-emerald-800 cursor-pointer">الفرص الاستثمارية</span>
+        <span class="hover:text-emerald-800 cursor-pointer">خدمات النقل</span>
+        
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="px-4 py-2 border rounded-xl text-xs font-bold text-slate-700">تسجيل الدخول</button>
+        <button class="px-4 py-2 bg-emerald-800 text-white rounded-xl text-xs font-bold">إنشاء حساب</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Marketplace Content -->
+  <main class="max-w-7xl mx-auto p-6 md:p-8 space-y-8">
+    
+    <!-- Hero Filter Bar -->
+    <div class="bg-emerald-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden space-y-4">
+      <div class="relative z-10 max-w-2xl space-y-3">
+        <span class="bg-emerald-800 text-emerald-300 text-xs font-bold px-3 py-1 rounded-full">سوق المحاصيل المباشر - الجوف</span>
+        <h1 class="text-3xl font-extrabold leading-tight">محاصيل طازجة مباشرة من مزارع الجوف بدون وساطة</h1>
+        <p class="text-xs text-slate-200">تصفح حبوب القمح البلدي، تمور الخلاص، الخضار والفواكه وقدم طلب شراء مباشر.</p>
+        
+        <div class="bg-white p-2 rounded-2xl flex flex-col sm:flex-row items-center gap-2 text-slate-800 shadow-md">
+          <div class="flex-1 flex items-center gap-2 px-3 w-full">
+            <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+            <input type="text" placeholder="ابحث عن محصول..." class="w-full text-xs outline-none bg-transparent">
+          </div>
+          <select class="text-xs bg-slate-100 rounded-xl p-2.5 font-bold text-slate-700 outline-none w-full sm:w-auto">
+            <option>كافة مديريات الجوف</option>
+            <option>الحزم</option>
+            <option>المتون</option>
+            <option>الخلق</option>
+          </select>
+          <button class="px-6 py-2.5 bg-emerald-800 text-white rounded-xl text-xs font-bold w-full sm:w-auto">بحث متقدم</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crops Grid -->
+    <div class="space-y-4">
+      <div class="flex justify-between items-center">
+        <h2 class="text-lg font-bold text-slate-900">أحدث المحاصيل المتاحة للطلب</h2>
+        <span class="text-xs text-emerald-800 font-bold cursor-pointer">عرض بالخريطة التفاعلية ←</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 space-y-3">
+          <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=500&q=80" class="h-44 w-full object-cover rounded-xl">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-sm text-slate-900">قمح بلدي صلب (درجة 1)</h3>
+              <div class="text-xs text-slate-500">مزرعة النور - الحزم ★ 4.9</div>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-sm">22,000 ر.ي</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded-lg text-xs flex justify-between">
+            <span>الكمية: <strong>350 كيس</strong></span>
+            <span>الوزن: <strong>50 كجم</strong></span>
+          </div>
+          <button class="w-full py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs rounded-xl shadow">
+            عرض التفاصيل وطلب الشراء
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 space-y-3">
+          <img src="../assets/images/dates.jpg">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-sm text-slate-900">تمر برحي قطف جديد</h3>
+              <div class="text-xs text-slate-500">مزارع الواحة - المتون ★ 4.8</div>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-sm">18,500 ر.ي</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded-lg text-xs flex justify-between">
+            <span>الكمية: <strong>500 كرتون</strong></span>
+            <span>الوزن: <strong>10 كجم</strong></span>
+          </div>
+          <button class="w-full py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs rounded-xl shadow">
+            عرض التفاصيل وطلب الشراء
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 space-y-3">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=500&q=80" class="h-44 w-full object-cover rounded-xl">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-bold text-sm text-slate-900">طماطم بلدي نخب أول</h3>
+              <div class="text-xs text-slate-500">مزرعة البركة - الخلق ★ 4.7</div>
+            </div>
+            <div class="text-left font-black text-emerald-800 text-sm">4,500 ر.ي</div>
+          </div>
+          <div class="bg-slate-50 p-2 rounded-lg text-xs flex justify-between">
+            <span>الكمية: <strong>800 سلة</strong></span>
+            <span>الحصاد: <strong>جاهز</strong></span>
+          </div>
+          <button class="w-full py-2.5 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs rounded-xl shadow">
+            عرض التفاصيل وطلب الشراء
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

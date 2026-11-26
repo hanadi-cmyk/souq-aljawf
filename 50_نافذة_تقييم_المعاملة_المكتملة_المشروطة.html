@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقييم التعامل الموثق | منصة الجوف</title>
+  <link rel="stylesheet" href="../assets/css/cairo.css">
+  <script src="../assets/js/tailwind.js"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-slate-900/60 backdrop-blur-sm min-h-screen flex items-center justify-center p-4">
+
+  <!-- Conditional Rating Modal -->
+  <div class="max-w-xl w-full bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden space-y-6">
+
+    <!-- Modal Header -->
+    <div class="bg-gradient-to-r from-amber-600 to-amber-700 text-white p-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-xl">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-black">تقييم ومراجعة التعامل المكتمل</h2>
+          <span class="text-xs text-amber-100">بموجب الصفقة الموثقة: #ORD-2026-781</span>
+        </div>
+      </div>
+      <a href="09_لوحة_تحكم_التاجر.html" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-sm transition">✕</a>
+    </div>
+
+    <!-- Modal Content -->
+    <form class="p-6 pt-0 space-y-5 text-xs">
+
+      <!-- Verified Deal Badge -->
+      <div class="bg-amber-50 p-3.5 rounded-2xl border border-amber-200 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-base"></i>
+          <div>
+            <div class="font-black text-slate-900">تعامل فعلي مكتمل وموثق</div>
+            <div class="text-[11px] text-slate-500">تم استلام شحنة 15 طن قمح صلب من المزارع: صالح المتوني</div>
+          </div>
+        </div>
+        <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black px-2.5 py-1 rounded-full">مكتمل</span>
+      </div>
+
+      <!-- Rating Criteria Breakdown -->
+      <div class="space-y-4">
+        
+        <!-- Criteria 1: Crop Quality -->
+        <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+          <div>
+            <div class="font-bold text-slate-900">جودة المحصول ونظافته:</div>
+            <div class="text-[11px] text-slate-500">مطابقة صنف القمح والنقاء من الشوائب</div>
+          </div>
+          <div class="flex items-center gap-1 text-amber-400 text-base cursor-pointer">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Criteria 2: Weight Accuracy -->
+        <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+          <div>
+            <div class="font-bold text-slate-900">دقة وأمانة الموازين (القبان):</div>
+            <div class="text-[11px] text-slate-500">تطابق وزن أكياس المزرعة مع قبان الوصول</div>
+          </div>
+          <div class="flex items-center gap-1 text-amber-400 text-base cursor-pointer">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Criteria 3: Punctuality -->
+        <div class="flex items-center justify-between p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+          <div>
+            <div class="font-bold text-slate-900">الالتزام بموعد التحميل:</div>
+            <div class="text-[11px] text-slate-500">جاهزية العمالة والشحنة لوصول الشاحنة</div>
+          </div>
+          <div class="flex items-center gap-1 text-amber-400 text-base cursor-pointer">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star text-slate-300"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Written Review -->
+      <div class="space-y-1.5">
+        <label class="block font-bold text-slate-700">اكتب رأيك الصادق في التعامل (سيظهر في ملف المزارع العام):</label>
+        <textarea rows="3" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-2xl outline-none focus:border-amber-600 font-medium" placeholder="اذكر تجربتك مع المزارع لمساعدة بقية تجار الجوف في اختياراتهم..."></textarea>
+      </div>
+
+      <!-- Condition Explanation -->
+      <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px] text-slate-500 leading-relaxed">
+        <i class="fa-solid fa-shield text-emerald-600 ml-1"></i>
+        تقييمك محمي وموثق تلقائياً بشارة <strong>"مشتري موثق بعد استلام الشحنة"</strong> ويساهم في رفع تصنيف مزارعي الجوف الملتزمين.
+      </div>
+
+      <!-- Actions -->
+      <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row gap-2">
+        <a href="09_لوحة_تحكم_التاجر.html" class="flex-1 py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-black rounded-xl text-center shadow-lg transition text-sm flex items-center justify-center gap-2">
+          <i class="fa-solid fa-star"></i>
+          <span>اعتماد ونشر التقييم في النظام</span>
+        </a>
+        <a href="09_لوحة_تحكم_التاجر.html" class="px-6 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl text-center transition">
+          تخطي الآن
+        </a>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
